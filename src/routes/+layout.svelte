@@ -6,10 +6,6 @@
 	const metaAlt = `
     Een zonnige, drukke dag aan de IJsselkade in Zutphen. Bovenaan staat de tekst 'Jongerenraad Zutphen', met daaronder 'Zutphen beter, mooier en leuker, voor en door jongeren'. Foto © Pieter Kers.
     `.trim();
-
-	$: page.subscribe((page) => {
-		console.log(page.data);
-	});
 </script>
 
 <svelte:head>
