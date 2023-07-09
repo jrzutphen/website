@@ -1,11 +1,11 @@
 import type { PageLoad } from "./$types"
 
-export const load = (({ url }) => {
+export const load = (({ route }) => {
     return {
         meta: {
             title: "Jongerenraad Zutphen",
             description: "Zutphen beter, mooier en leuker, voor en door jongeren",
-            url: url.href
+            url: `https://jrzutphen.nl${route.id ? route.id : ""}`,
         }
     };
 }) satisfies PageLoad;
