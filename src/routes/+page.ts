@@ -5,7 +5,7 @@ export const load = (({ route }) => {
         meta: {
             title: "Jongerenraad Zutphen",
             description: "Zutphen beter, mooier en leuker, voor en door jongeren",
-            url: `https://jrzutphen.nl${route.id ? route.id : ""}`,
+            url: `https://nieuw.jrzutphen.nl${route.id ? route.id : ""}`,
         }
     };
 }) satisfies PageLoad;
