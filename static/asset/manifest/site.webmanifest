@@ -44,9 +44,9 @@
 			"type": "image/png"
 		}
 	],
-	"id": "/",
-	"start_url": "/",
-	"scope": "/",
+	"id": "https://nieuw.jrzutphen.nl",
+	"start_url": "https://nieuw.jrzutphen.nl",
+	"scope": "https://nieuw.jrzutphen.nl",
 	"theme_color": "#fcf5ec",
 	"background_color": "#fcf5ec",
 	"display": "standalone",
