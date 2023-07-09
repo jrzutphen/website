@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { title, description, url } from "$lib/script/meta";
 	import "../app.scss";
 	import { assets } from "$app/paths";
 	import { page } from "$app/stores";
@@ -10,26 +11,21 @@
 		met daaronder 'Zutphen beter, mooier en leuker, voor en door jongeren'.
 		Foto © Pieter Kers.
     	`.replace(/\s+/g, " ");
-
-	$: title = ($page.data.meta?.title || "Jongerenraad Zutphen") as string;
-	$: description = ($page.data.meta?.description ||
-		"Zutphen beter, mooier en leuker, voor en door jongeren") as string;
-	$: url = ($page.data.meta?.url || "https://jrzutphen.nl") as string;
 </script>
 
 <svelte:head>
 	<!-- Common meta tags -->
-	<title>{title}</title>
-	<meta name="title" content={title} />
-	<meta name="description" content={description} />
+	<title>{$title}</title>
+	<meta name="title" content={$title} />
+	<meta name="description" content={$description} />
 
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website" />
 	<meta property="og:locale" content="nl_NL" />
-	<meta property="og:url" content={url} />
+	<meta property="og:url" content={$url} />
 	<meta property="og:site_name" content="Jongerenraad Zutphen" />
-	<meta property="og:title" content={title} />
-	<meta property="og:description" content={description} />
+	<meta property="og:title" content={$title} />
+	<meta property="og:description" content={$description} />
 	<meta property="og:image" content="{assets}/asset/picture/meta.jpg" />
 	<meta property="og:image:type" content="image/jpeg" />
 	<meta property="og:image:width" content="1200" />
@@ -38,9 +34,9 @@
 
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image" />
-	<meta property="twitter:url" content={url} />
-	<meta property="twitter:title" content={title} />
-	<meta property="twitter:description" content={description} />
+	<meta property="twitter:url" content={$url} />
+	<meta property="twitter:title" content={$title} />
+	<meta property="twitter:description" content={$description} />
 	<meta property="twitter:image" content="{assets}/asset/picture/meta.jpg" />
 	<meta property="twitter:image:alt" content={metaAlt} />
 
