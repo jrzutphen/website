@@ -53,13 +53,13 @@
 		sizes="16x16"
 		href="{assets}/asset/favicon/favicon-16x16.png"
 	/>
-	<link rel="manifest" href="{assets}/asset/favicon/site.webmanifest" />
+	<link rel="manifest" href="{assets}/asset/manifest/site.webmanifest" />
 	<link rel="mask-icon" href="{assets}/asset/favicon/safari-pinned-tab.svg" color="#f69865" />
 	<link rel="shortcut icon" href="{assets}/asset/favicon/favicon.ico" />
 	<meta name="apple-mobile-web-app-title" content="Jongerenraad Zutphen" />
 	<meta name="application-name" content="Jongerenraad Zutphen" />
 	<meta name="msapplication-TileColor" content="#fcf5ec" />
-	<meta name="msapplication-config" content="{assets}/asset/favicon/browserconfig.xml" />
+	<meta name="msapplication-config" content="{assets}/asset/msapplication/browserconfig.xml" />
 	<meta name="theme-color" content="#fcf5ec" />
 </svelte:head>
 
