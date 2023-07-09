@@ -9,7 +9,10 @@ const config = {
 		adapter: adapter({
 			// TODO: re-enable strict mode when we have all pages
 			strict: false
-		})
+		}),
+		prerender: {
+			handleHttpError: "warn"
+		}
 	}
 };
 
