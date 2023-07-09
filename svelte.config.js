@@ -6,7 +6,10 @@ const config = {
 	preprocess: vitePreprocess(),
 
 	kit: {
-		adapter: adapter()
+		adapter: adapter({
+			// TODO: re-enable strict mode when we have all pages
+			strict: false
+		})
 	}
 };
 
