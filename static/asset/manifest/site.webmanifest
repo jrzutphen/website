@@ -85,7 +85,6 @@
 	"launch_handler": {
 		"client_mode": "auto"
 	},
-	"": [],
 	"protocol_handlers": [],
 	"shortcuts": [
 		{
@@ -97,32 +96,38 @@
 				{
 					"src": "shortcut/over-ons-36x.png",
 					"type": "image/png",
-					"sizes": "36x36"
+					"sizes": "36x36",
+					"purpose": "any"
 				},
 				{
 					"src": "shortcut/over-ons-48x.png",
 					"type": "image/png",
-					"sizes": "48x48"
+					"sizes": "48x48",
+					"purpose": "any"
 				},
 				{
 					"src": "shortcut/over-ons-72x.png",
 					"type": "image/png",
-					"sizes": "72x72"
+					"sizes": "72x72",
+					"purpose": "any"
 				},
 				{
 					"src": "shortcut/over-ons-96x.png",
 					"type": "image/png",
-					"sizes": "96x96"
+					"sizes": "96x96",
+					"purpose": "any"
 				},
 				{
 					"src": "shortcut/over-ons-144x.png",
 					"type": "image/png",
-					"sizes": "144x144"
+					"sizes": "144x144",
+					"purpose": "any"
 				},
 				{
 					"src": "shortcut/over-ons-192x.png",
 					"type": "image/png",
-					"sizes": "192x192"
+					"sizes": "192x192",
+					"purpose": "any"
 				}
 			]
 		},
@@ -135,32 +140,38 @@
 				{
 					"src": "shortcut/blog-36x.png",
 					"type": "image/png",
-					"sizes": "36x36"
+					"sizes": "36x36",
+					"purpose": "any"
 				},
 				{
 					"src": "shortcut/blog-48x.png",
 					"type": "image/png",
-					"sizes": "48x48"
+					"sizes": "48x48",
+					"purpose": "any"
 				},
 				{
 					"src": "shortcut/blog-72x.png",
 					"type": "image/png",
-					"sizes": "72x72"
+					"sizes": "72x72",
+					"purpose": "any"
 				},
 				{
 					"src": "shortcut/blog-96x.png",
 					"type": "image/png",
-					"sizes": "96x96"
+					"sizes": "96x96",
+					"purpose": "any"
 				},
 				{
 					"src": "shortcut/blog-144x.png",
 					"type": "image/png",
-					"sizes": "144x144"
+					"sizes": "144x144",
+					"purpose": "any"
 				},
 				{
 					"src": "shortcut/blog-192x.png",
 					"type": "image/png",
-					"sizes": "192x192"
+					"sizes": "192x192",
+					"purpose": "any"
 				}
 			]
 		},
@@ -173,32 +184,38 @@
 				{
 					"src": "shortcut/documenten-36x.png",
 					"type": "image/png",
-					"sizes": "36x36"
+					"sizes": "36x36",
+					"purpose": "any"
 				},
 				{
 					"src": "shortcut/documenten-48x.png",
 					"type": "image/png",
-					"sizes": "48x48"
+					"sizes": "48x48",
+					"purpose": "any"
 				},
 				{
 					"src": "shortcut/documenten-72x.png",
 					"type": "image/png",
-					"sizes": "72x72"
+					"sizes": "72x72",
+					"purpose": "any"
 				},
 				{
 					"src": "shortcut/documenten-96x.png",
 					"type": "image/png",
-					"sizes": "96x96"
+					"sizes": "96x96",
+					"purpose": "any"
 				},
 				{
 					"src": "shortcut/documenten-144x.png",
 					"type": "image/png",
-					"sizes": "144x144"
+					"sizes": "144x144",
+					"purpose": "any"
 				},
 				{
 					"src": "shortcut/documenten-192x.png",
 					"type": "image/png",
-					"sizes": "192x192"
+					"sizes": "192x192",
+					"purpose": "any"
 				}
 			]
 		},
@@ -211,32 +228,38 @@
 				{
 					"src": "shortcut/zoek-36x.png",
 					"type": "image/png",
-					"sizes": "36x36"
+					"sizes": "36x36",
+					"purpose": "any"
 				},
 				{
 					"src": "shortcut/zoek-48x.png",
 					"type": "image/png",
-					"sizes": "48x48"
+					"sizes": "48x48",
+					"purpose": "any"
 				},
 				{
 					"src": "shortcut/zoek-72x.png",
 					"type": "image/png",
-					"sizes": "72x72"
+					"sizes": "72x72",
+					"purpose": "any"
 				},
 				{
 					"src": "shortcut/zoek-96x.png",
 					"type": "image/png",
-					"sizes": "96x96"
+					"sizes": "96x96",
+					"purpose": "any"
 				},
 				{
 					"src": "shortcut/zoek-144x.png",
 					"type": "image/png",
-					"sizes": "144x144"
+					"sizes": "144x144",
+					"purpose": "any"
 				},
 				{
 					"src": "shortcut/zoek-192x.png",
 					"type": "image/png",
-					"sizes": "192x192"
+					"sizes": "192x192",
+					"purpose": "any"
 				}
 			]
 		}
