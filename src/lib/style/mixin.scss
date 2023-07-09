@@ -1,0 +1,89 @@
+@use "variable";
+
+/*
+ * Returns the value of the breakpoint to be used as the lower bound of a media query.
+ *
+ * Does nothing much actually, just returns the value of the breakpoint.
+ * Provided for consistency with upper-bound($name).
+ */
+@function lower-bound($name) {
+    $value: map-get(variable.$breakpoints, $name);
+    @return if($value and $value > 0, $value, null);
+}
+
+/*
+ * Returns the value of the breakpoint to be used as the upper bound of a media query.
+ *
+ * Specifically, this function returns the breakpoint value minus 0.02px.
+ * This is because browsers are weird.
+ */
+@function upper-bound($name) {
+    $value: map-get(variable.$breakpoints, $name);
+    @return if($value and $value > 0.02, $value - 0.02, null);
+}
+
+/*
+ * Returns the name of the breakpoint that comes after the specified breakpoint.
+ *
+ * If the specified breakpoint is the last breakpoint, returns null.
+ */
+@function next-breakpoint($name) {
+    $keys: map-keys(variable.$breakpoints);
+    $index: index($keys, $name);
+    @if not $index {
+        @error "No value found for breakpoint #{$name}.";
+    }
+    @return if($index < length($keys), nth($keys, $index + 1), null);
+}
+
+@mixin media-from($breakpoint) {
+    $min: lower-bound($breakpoint);
+    @if not $min {
+        @error "No value found for breakpoint #{$breakpoint}.";
+    }
+    @media screen and (min-width: $min) {
+        @content;
+    }
+}
+
+@mixin media-to($breakpoint) {
+    $max: upper-bound($breakpoint);
+    @if not $max {
+        @error "No value found for breakpoint #{$upperBound}, or the breakpoint is too small.";
+    }
+    @media screen and (max-width: $max) {
+        @content;
+    }
+}
+
+@mixin media-between($lowerBreakpoint, $upperBreakpoint) {
+    $min: lower-bound($lowerBreakpoint);
+    @if not $min {
+        @error "No value found for breakpoint #{$lowerBound}.";
+    }
+    $max: upper-bound($upperBreakpoint);
+    @if not $max {
+        @error "No value found for breakpoint #{$upperBound}, or the breakpoint is too small.";
+    }
+    @media screen and (min-width: $min) and (max-width: $max) {
+        @content;
+    }
+}
+
+@mixin media-only($breakpoint) {
+    $min: lower-bound($breakpoint);
+    @if not $min {
+        @error "No value found for breakpoint #{$breakpoint}.";
+    }
+    $nextBreakpoint: next-breakpoint($breakpoint);
+    @if not $nextBreakpoint {
+        @error "Breakpoint #{$breakpoint} is the last breakpoint.";
+    }
+    $max: upper-bound($nextBreakpoint);
+    @if not $max {
+        @error "No value found for breakpoint #{$nextBreakpoint}, or the breakpoint is too small.";
+    }
+    @media screen and (min-width: $min) and (max-width: $max) {
+        @content;
+    }
+}

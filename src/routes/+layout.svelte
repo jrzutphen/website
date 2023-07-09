@@ -2,25 +2,34 @@
 	import "../app.scss";
 	import { assets } from "$app/paths";
 	import { page } from "$app/stores";
+	import Header from "./Header.svelte";
 
 	const metaAlt = `
-    Een zonnige, drukke dag aan de IJsselkade in Zutphen. Bovenaan staat de tekst 'Jongerenraad Zutphen', met daaronder 'Zutphen beter, mooier en leuker, voor en door jongeren'. Foto © Pieter Kers.
-    `.trim();
+    	Een zonnige, drukke dag aan de IJsselkade in Zutphen.
+		Bovenaan staat de tekst 'Jongerenraad Zutphen',
+		met daaronder 'Zutphen beter, mooier en leuker, voor en door jongeren'.
+		Foto © Pieter Kers.
+    	`.replace(/\s+/g, " ");
+
+	$: title = ($page.data.meta?.title || "Jongerenraad Zutphen") as string;
+	$: description = ($page.data.meta?.description ||
+		"Zutphen beter, mooier en leuker, voor en door jongeren") as string;
+	$: url = ($page.data.meta?.url || "https://jrzutphen.nl") as string;
 </script>
 
 <svelte:head>
 	<!-- Common meta tags -->
-	<title>Jongerenraad Zutphen</title>
-	<meta name="title" content={$page.data.meta?.title} />
-	<meta name="description" content={$page.data.meta?.description} />
+	<title>{title}</title>
+	<meta name="title" content={title} />
+	<meta name="description" content={description} />
 
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website" />
 	<meta property="og:locale" content="nl_NL" />
-	<meta property="og:url" content={$page.data.meta?.url} />
+	<meta property="og:url" content={url} />
 	<meta property="og:site_name" content="Jongerenraad Zutphen" />
-	<meta property="og:title" content={$page.data.meta?.title} />
-	<meta property="og:description" content={$page.data.meta?.description} />
+	<meta property="og:title" content={title} />
+	<meta property="og:description" content={description} />
 	<meta property="og:image" content="{assets}/asset/picture/meta.jpg" />
 	<meta property="og:image:type" content="image/jpeg" />
 	<meta property="og:image:width" content="1200" />
@@ -29,9 +38,9 @@
 
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image" />
-	<meta property="twitter:url" content={$page.data.meta?.url} />
-	<meta property="twitter:title" content={$page.data.meta?.title} />
-	<meta property="twitter:description" content={$page.data.meta?.description} />
+	<meta property="twitter:url" content={url} />
+	<meta property="twitter:title" content={title} />
+	<meta property="twitter:description" content={description} />
 	<meta property="twitter:image" content="{assets}/asset/picture/meta.jpg" />
 	<meta property="twitter:image:alt" content={metaAlt} />
 
@@ -53,14 +62,26 @@
 		sizes="16x16"
 		href="{assets}/asset/favicon/favicon-16x16.png"
 	/>
-	<link rel="manifest" href="{assets}/asset/manifest/site.webmanifest" />
-	<link rel="mask-icon" href="{assets}/asset/favicon/safari-pinned-tab.svg" color="#f69865" />
+	<link
+		rel="mask-icon"
+		href="{assets}/asset/favicon/safari-pinned-tab.svg"
+		color="#f69865"
+	/>
 	<link rel="shortcut icon" href="{assets}/asset/favicon/favicon.ico" />
 	<meta name="apple-mobile-web-app-title" content="Jongerenraad Zutphen" />
 	<meta name="application-name" content="Jongerenraad Zutphen" />
 	<meta name="msapplication-TileColor" content="#fcf5ec" />
-	<meta name="msapplication-config" content="{assets}/asset/msapplication/browserconfig.xml" />
 	<meta name="theme-color" content="#fcf5ec" />
+
+	<link rel="manifest" href="{assets}/asset/manifest/site.webmanifest" />
+	<meta
+		name="msapplication-config"
+		content="{assets}/asset/msapplication/browserconfig.xml"
+	/>
 </svelte:head>
 
-<slot />
+<Header />
+
+<main>
+	<slot />
+</main>

@@ -1,0 +1,15 @@
+$color-text: #2f1000;
+$color-background: #fcf5ec;
+$color-primary: #145276;
+$color-secondary: #c32232;
+$color-accent: #f69865;
+
+// Shamelessly stolen from https://tailwindcss.com/docs/responsive-design
+$breakpoints: (
+    xs: 0,
+    sm: 640px,
+    md: 768px,
+    lg: 1024px,
+    xl: 1280px,
+    xxl: 1536px,
+)
