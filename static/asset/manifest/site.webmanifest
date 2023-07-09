@@ -50,6 +50,7 @@
 	"theme_color": "#fcf5ec",
 	"background_color": "#fcf5ec",
 	"display": "standalone",
+	"display_override": ["minimal-ui", "fullscreen", "window-controls-overlay", "browser"],
 	"orientation": "natural",
 	"shortcuts": [
 		{
