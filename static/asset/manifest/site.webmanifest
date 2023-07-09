@@ -4,52 +4,60 @@
 	"description": "Zutphen beter, mooier en leuker, voor en door jongeren",
 	"lang": "nl",
 	"categories": ["events", "government", "politics"],
-	"iarc_rating_id": "",
 	"icons": [
 		{
 			"src": "icon-48x.png",
 			"type": "image/png",
-			"sizes": "48x48"
+			"sizes": "48x48",
+			"purpose": "any"
 		},
 		{
 			"src": "icon-72x.png",
 			"type": "image/png",
-			"sizes": "72x72"
+			"sizes": "72x72",
+			"purpose": "any"
 		},
 		{
 			"src": "icon-96x.png",
 			"type": "image/png",
-			"sizes": "96x96"
+			"sizes": "96x96",
+			"purpose": "any"
 		},
 		{
 			"src": "icon-128x.png",
 			"type": "image/png",
-			"sizes": "128x128"
+			"sizes": "128x128",
+			"purpose": "any"
 		},
 		{
 			"src": "icon-192x.png",
 			"type": "image/png",
-			"sizes": "192x192"
+			"sizes": "192x192",
+			"purpose": "any"
 		},
 		{
 			"src": "icon-384x.png",
 			"type": "image/png",
-			"sizes": "384x384"
+			"sizes": "384x384",
+			"purpose": "any"
 		},
 		{
 			"src": "icon-512x.png",
 			"type": "image/png",
-			"sizes": "512x512"
+			"sizes": "512x512",
+			"purpose": "any"
 		},
 		{
 			"src": "icon-1024x.png",
 			"type": "image/png",
-			"sizes": "1024x1024"
+			"sizes": "1024x1024",
+			"purpose": "any"
 		},
 		{
 			"src": "icon.svg",
 			"type": "image/svg+xml",
-			"sizes": "any"
+			"sizes": "any",
+			"purpose": "any"
 		}
 	],
 	"handle_links": "auto",
@@ -77,10 +85,8 @@
 	"launch_handler": {
 		"client_mode": "auto"
 	},
-	"file_handlers": [],
+	"": [],
 	"protocol_handlers": [],
-	"share_target": null,
-	"widgets": [],
 	"shortcuts": [
 		{
 			"name": "Leer meer over ons",
@@ -117,11 +123,6 @@
 					"src": "shortcut/over-ons-192x.png",
 					"type": "image/png",
 					"sizes": "192x192"
-				},
-				{
-					"src": "shortcut/over-ons.svg",
-					"type": "image/svg+xml",
-					"sizes": "any"
 				}
 			]
 		},
@@ -160,11 +161,6 @@
 					"src": "shortcut/blog-192x.png",
 					"type": "image/png",
 					"sizes": "192x192"
-				},
-				{
-					"src": "shortcut/blog.svg",
-					"type": "image/svg+xml",
-					"sizes": "any"
 				}
 			]
 		},
@@ -203,11 +199,6 @@
 					"src": "shortcut/documenten-192x.png",
 					"type": "image/png",
 					"sizes": "192x192"
-				},
-				{
-					"src": "shortcut/documenten.svg",
-					"type": "image/svg+xml",
-					"sizes": "any"
 				}
 			]
 		},
@@ -246,11 +237,6 @@
 					"src": "shortcut/zoek-192x.png",
 					"type": "image/png",
 					"sizes": "192x192"
-				},
-				{
-					"src": "shortcut/zoek.svg",
-					"type": "image/svg+xml",
-					"sizes": "any"
 				}
 			]
 		}
