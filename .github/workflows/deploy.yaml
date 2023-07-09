@@ -31,25 +31,15 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      - name: Set up PNPM
+        uses: pnpm/action-setup@v2
+        with:
+          version: 7
       - name: Set up Node
         uses: actions/setup-node@v3
         with:
           node-version: 20
           cache: "pnpm"
-      - name: Set up PNPM
-        uses: pnpm/action-setup@v2
-        with:
-          version: 7
-          run_install: false
-      - name: Get PNPM store path
-        id: pnpm-store-path
-        shell: bash
-        run: echo "STORE_PATH=$(pnpm config get store)" >> $GITHUB_OUTPUT
-      - name: Cache PNPM store
-        uses: actions/cache@v3
-        with:
-          path: ${{ steps.pnpm-store-path.outputs.STORE_PATH }}
-          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
       - name: Install dependencies
         run: pnpm install
       - name: Build
