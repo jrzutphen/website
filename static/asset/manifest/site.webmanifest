@@ -19,7 +19,7 @@
 			"type": "image/png"
 		},
 		{
-			"src": "icon-128.png",
+			"src": "icon-128x.png",
 			"sizes": "128x128",
 			"type": "image/png"
 		},
@@ -44,8 +44,183 @@
 			"type": "image/png"
 		}
 	],
+	"id": "/",
+	"start_url": "/",
+	"scope": "/",
 	"theme_color": "#fcf5ec",
 	"background_color": "#fcf5ec",
-	"start_url": "https://nieuw.jrzutphen.nl",
-	"display": "standalone"
+	"display": "standalone",
+	"orientation": "natural",
+	"shortcuts": [
+		{
+			"name": "Leer meer over ons",
+			"short_name": "Over ons",
+			"description": "Leer over wie we zijn, wat we doen, waarom we het doen, en hoe jij kan bijdragen",
+			"url": "/over-ons",
+			"icons": [
+				{
+					"src": "shortcut/over-ons-36x.png",
+					"sizes": "36x36"
+				},
+				{
+					"src": "shortcut/over-ons-48x.png",
+					"sizes": "48x48"
+				},
+				{
+					"src": "shortcut/over-ons-72x.png",
+					"sizes": "72x72"
+				},
+				{
+					"src": "shortcut/over-ons-96x.png",
+					"sizes": "96x96"
+				},
+				{
+					"src": "shortcut/over-ons-144x.png",
+					"sizes": "144x144"
+				},
+				{
+					"src": "shortcut/over-ons-192x.png",
+					"sizes": "192x192"
+				},
+				{
+					"src": "shortcut/over-ons.svg",
+					"sizes": "any"
+				}
+			]
+		},
+		{
+			"name": "Lees ons blog",
+			"short_name": "Blog",
+			"description": "Lees onze blogposts over wat we doen, wat we vinden, en wat we willen",
+			"url": "/blog",
+			"icons": [
+				{
+					"src": "shortcut/blog-36x.png",
+					"sizes": "36x36"
+				},
+				{
+					"src": "shortcut/blog-48x.png",
+					"sizes": "48x48"
+				},
+				{
+					"src": "shortcut/blog-72x.png",
+					"sizes": "72x72"
+				},
+				{
+					"src": "shortcut/blog-96x.png",
+					"sizes": "96x96"
+				},
+				{
+					"src": "shortcut/blog-144x.png",
+					"sizes": "144x144"
+				},
+				{
+					"src": "shortcut/blog-192x.png",
+					"sizes": "192x192"
+				},
+				{
+					"src": "shortcut/blog.svg",
+					"sizes": "any"
+				}
+			]
+		},
+		{
+			"name": "Zie onze documenten",
+			"short_name": "Documenten",
+			"description": "Zie onze documenten, zoals onze adviezen, statuten, huishoudelijk reglement, en jaarverslagen",
+			"url": "/documenten",
+			"icons": [
+				{
+					"src": "shortcut/documenten-36x.png",
+					"sizes": "36x36"
+				},
+				{
+					"src": "shortcut/documenten-48x.png",
+					"sizes": "48x48"
+				},
+				{
+					"src": "shortcut/documenten-72x.png",
+					"sizes": "72x72"
+				},
+				{
+					"src": "shortcut/documenten-96x.png",
+					"sizes": "96x96"
+				},
+				{
+					"src": "shortcut/documenten-144x.png",
+					"sizes": "144x144"
+				},
+				{
+					"src": "shortcut/documenten-192x.png",
+					"sizes": "192x192"
+				},
+				{
+					"src": "shortcut/documenten.svg",
+					"sizes": "any"
+				}
+			]
+		},
+		{
+			"name": "Zoek door onze website",
+			"short_name": "Zoek",
+			"description": "Zoek naar wat je nodig hebt",
+			"url": "/zoek",
+			"icons": [
+				{
+					"src": "shortcut/zoek-36x.png",
+					"sizes": "36x36"
+				},
+				{
+					"src": "shortcut/zoek-48x.png",
+					"sizes": "48x48"
+				},
+				{
+					"src": "shortcut/zoek-72x.png",
+					"sizes": "72x72"
+				},
+				{
+					"src": "shortcut/zoek-96x.png",
+					"sizes": "96x96"
+				},
+				{
+					"src": "shortcut/zoek-144x.png",
+					"sizes": "144x144"
+				},
+				{
+					"src": "shortcut/zoek-192x.png",
+					"sizes": "192x192"
+				},
+				{
+					"src": "shortcut/zoek.svg",
+					"sizes": "any"
+				}
+			]
+		}
+	],
+	"screenshots": [
+		{
+			"src": "screenshot/narrow-1.jpg",
+			"type": "image/jpeg",
+			"sizes": "540x720",
+			"form_factor": "narrow"
+		},
+		{
+			"src": "screenshot/narrow-2.jpg",
+			"type": "image/jpeg",
+			"sizes": "540x720",
+			"form_factor": "narrow"
+		},
+		{
+			"src": "screenshot/wide-1.jpg",
+			"type": "image/jpeg",
+			"sizes": "720x540",
+			"form_factor": "wide"
+		},
+		{
+			"src": "screenshot/wide-2.jpg",
+			"type": "image/jpeg",
+			"sizes": "720x540",
+			"form_factor": "wide"
+		}
+	]
 }
