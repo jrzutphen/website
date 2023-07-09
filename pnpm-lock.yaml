@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@sveltejs/adapter-auto': ^2.0.0
+  '@sveltejs/adapter-static': ^2.0.2
   '@sveltejs/kit': ^1.20.4
   '@typescript-eslint/eslint-plugin': ^5.45.0
   '@typescript-eslint/parser': ^5.45.0
@@ -19,7 +19,7 @@ specifiers:
   vite-imagetools: ^5.0.5
 
 devDependencies:
-  '@sveltejs/adapter-auto': 2.1.0_@sveltejs+kit@1.22.1
+  '@sveltejs/adapter-static': 2.0.2_@sveltejs+kit@1.22.1
   '@sveltejs/kit': 1.22.1_svelte@4.0.5+vite@4.4.2
   '@typescript-eslint/eslint-plugin': 5.61.0_24v3duij7ab7rtbfz4qzw7dc5u
   '@typescript-eslint/parser': 5.61.0_iqf7tbmerllfqanu4l3d6aqdn4
@@ -379,13 +379,12 @@ packages:
       picomatch: 2.3.1
     dev: true
 
-  /@sveltejs/adapter-auto/2.1.0_@sveltejs+kit@1.22.1:
-    resolution: {integrity: sha512-o2pZCfATFtA/Gw/BB0Xm7k4EYaekXxaPGER3xGSY3FvzFJGTlJlZjBseaXwYSM94lZ0HniOjTokN3cWaLX6fow==}
+  /@sveltejs/adapter-static/2.0.2_@sveltejs+kit@1.22.1:
+    resolution: {integrity: sha512-9wYtf6s6ew7DHUHMrt55YpD1FgV7oWql2IGsW5BXquLxqcY9vjrqCFo0TzzDpo+ZPZkW/v77k0eOP6tsAb8HmQ==}
     peerDependencies:
-      '@sveltejs/kit': ^1.0.0
+      '@sveltejs/kit': ^1.5.0
     dependencies:
       '@sveltejs/kit': 1.22.1_svelte@4.0.5+vite@4.4.2
-      import-meta-resolve: 3.0.0
     dev: true
 
   /@sveltejs/kit/1.22.1_svelte@4.0.5+vite@4.4.2:
@@ -1258,10 +1257,6 @@ packages:
     dependencies:
       parent-module: 1.0.1
       resolve-from: 4.0.0
-    dev: true
-
-  /import-meta-resolve/3.0.0:
-    resolution: {integrity: sha512-4IwhLhNNA8yy445rPjD/lWh++7hMDOml2eHtd58eG7h+qK3EryMuuRbsHGPikCoAgIkkDnckKfWSk2iDla/ejg==}
     dev: true
 
   /imurmurhash/0.1.4:
