@@ -36,7 +36,7 @@ jobs:
           node-version: 20
           cache: "pnpm"
       - name: Set up PNPM
-        ises: pnpm/action-setup@v2
+        uses: pnpm/action-setup@v2
         with:
           version: 7
           run_install: false
