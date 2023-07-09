@@ -74,7 +74,7 @@
 	"side_panel": {
 		"preferred_width": 640
 	},
-	"launch_handler": "auto",
+	"launch_handler": ["auto"],
 	"file_handlers": [],
 	"protocol_handlers": [],
 	"share_target": null,
