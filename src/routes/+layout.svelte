@@ -2,8 +2,9 @@
 	import { title, description, url } from "$lib/script/meta";
 	import "../app.scss";
 	import { assets } from "$app/paths";
-	import { page } from "$app/stores";
 	import Header from "./Header.svelte";
+	import { onMount } from "svelte";
+	import { browser } from "$app/environment";
 
 	const metaAlt = `
     	Een zonnige, drukke dag aan de IJsselkade in Zutphen.
@@ -11,6 +12,12 @@
 		met daaronder 'Zutphen beter, mooier en leuker, voor en door jongeren'.
 		Foto © Pieter Kers.
     	`.replace(/\s+/g, " ");
+
+	onMount(() => {
+		if (browser) {
+			url.set(window.location.href);
+		}
+	});
 </script>
 
 <svelte:head>
