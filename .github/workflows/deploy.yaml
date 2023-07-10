@@ -56,3 +56,14 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
+      - name: Configure sitemap cache
+        id: sitemap-cache
+        uses: actions/cache@v3
+        with:
+          path: build/sitemap.xml
+          key: sitemap-cache-${{ hashFiles('build/sitemap.xml') }}
+          lookup-only: true
+      - name: Notify Google of updated sitemap
+        if: steps.sitemap-cache.outputs.cache-hit != 'true'
+        run: |
+          curl -s "https://google.com/ping?sitemap=https://nieuw.jrzutphen.nl/sitemap.xml"

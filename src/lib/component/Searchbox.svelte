@@ -69,7 +69,11 @@
 		type="search"
 		id="query"
 		name="naar"
-		placeholder=" "
+		placeholder="Zoek"
+		autocorrect="off"
+		autocapitalize="none"
+		autocomplete="off"
+		spellcheck="false"
 		bind:value={$query}
 		on:focusout={focusOut}
 	/>
@@ -123,6 +127,7 @@
 			padding: 0.5rem 1rem;
 
 			border: none;
+			outline: none;
 			border-radius: 0.5rem;
 			background: color.adjust(
 				variable.$color-background,

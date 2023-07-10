@@ -3,6 +3,7 @@
 	import Plus from "$lib/asset/icon/Plus.svelte";
 	import { Variant } from "$lib/asset/icon/variant";
 	import Searchbox from "$lib/component/Searchbox.svelte";
+	import IconLinkedIn from "~icons/mdi/linkedin";
 </script>
 
 <header>
@@ -28,6 +29,8 @@
 	<a href="/" aria-label="Jongerenraad Zutphen" aria-current="page">
 		<img alt="" src={Logo} />
 	</a>
+
+	<IconLinkedIn style="font-size: 3rem; color: red;" />
 
 	<section>
 		<Searchbox />
