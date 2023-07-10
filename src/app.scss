@@ -1,11 +1,16 @@
 @use "$lib/style/variable";
 
 @font-face {
-	font-family: "Lexend";
-	src: url("/asset/font/Lexend-VariableFont_wght.woff2") format("woff2-variations");
+	font-family: Lexend;
+	src: url(/asset/font/Lexend-VariableFont_wght.woff2)
+			format("woff2 supports variations"),
+		url(/asset/font/Lexend-VariableFont_wght.woff2)
+			format("woff2-variations"),
+		url(/asset/font/Lexend-VariableFont_wght.woff2) format("woff2"),
+		local(Lexend);
 	font-display: fallback;
-	font-weight: 100 900;
-    font-stretch: 75% 125%;
+	font-weight: 100 1000;
+	font-stretch: normal;
 	font-style: normal;
 }
 
@@ -18,27 +23,46 @@ html {
 	-webkit-font-smoothing: antialiased;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
 	box-sizing: inherit;
 }
 
-body, h1, h2, h3, h4, h5, h6, p, ol, ul, figure {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+figure {
 	margin: 0;
 	padding: 0;
 	font-weight: normal;
 }
 
-ol, ul {
+ol,
+ul {
 	list-style: none;
 }
 
-img, picture, video, canvas {
+img,
+picture,
+video,
+canvas {
 	display: block;
 	max-width: 100%;
 	height: auto;
 }
 
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
 	font: inherit;
 }
 
@@ -49,8 +73,8 @@ address {
 // Global styling
 
 body {
-    background-color: variable.$color-background;
-    font-family: "Lexend", sans-serif;
+	background-color: variable.$color-background;
+	font-family: Lexend, sans-serif;
 	font-size: 16px;
 	font-weight: 400;
 }
