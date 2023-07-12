@@ -53,16 +53,16 @@
 		"update:filter": "ncu --upgrade --filter"
 	},
 	"lint-staged": {
-		"*.js": "eslint --cache --fix",
-		"*": "prettier --ignore-unknown --write"
+		"*": "prettier --plugin-search-dir . --ignore-unknown --write",
+		"*.{js,ts,svelte}": "eslint --cache --fix"
 	},
 	"devDependencies": {
-		"@iconify-json/mdi": "^1.1.52",
+		"@iconify-json/mdi": "^1.1.53",
 		"@sveltejs/adapter-static": "^2.0.2",
-		"@sveltejs/kit": "^1.22.1",
+		"@sveltejs/kit": "^1.22.2",
 		"@types/node": "^20.4.1",
-		"@typescript-eslint/eslint-plugin": "^5.61.0",
-		"@typescript-eslint/parser": "^5.61.0",
+		"@typescript-eslint/eslint-plugin": "^6.0.0",
+		"@typescript-eslint/parser": "^6.0.0",
 		"eslint": "^8.44.0",
 		"eslint-config-prettier": "^8.8.0",
 		"eslint-plugin-svelte": "^2.32.2",
@@ -73,15 +73,15 @@
 		"prettier-plugin-svelte": "^2.10.1",
 		"rollup-plugin-visualizer": "^5.9.2",
 		"sass": "^1.63.6",
-		"sharp": "^0.32.1",
+		"sharp": "^0.32.2",
 		"svelte": "^4.0.5",
-		"svelte-check": "^3.4.5",
+		"svelte-check": "^3.4.6",
 		"svelte-sitemap": "^2.6.0",
 		"svgo": "^3.0.2",
 		"tslib": "^2.6.0",
 		"typescript": "^5.1.6",
 		"unplugin-icons": "^0.16.3",
-		"vite": "^4.4.2",
+		"vite": "^4.4.3",
 		"vite-imagetools": "^5.0.5",
 		"vite-plugin-image-optimizer": "^1.1.6",
 		"workbox-precaching": "^7.0.0"
