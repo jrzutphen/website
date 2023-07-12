@@ -2,8 +2,7 @@
 	import Logo from "$lib/asset/graphic/Logo.svg";
 	import Plus from "$lib/asset/icon/Plus.svelte";
 	import { Variant } from "$lib/asset/icon/variant";
-	import Searchbox from "$lib/component/Searchbox.svelte";
-	import IconLinkedIn from "~icons/mdi/linkedin";
+	import NewSearchBox from "$lib/component/NewSearchBox.svelte";
 </script>
 
 <header>
@@ -30,12 +29,10 @@
 		<img alt="" src={Logo} />
 	</a>
 
-	<IconLinkedIn style="font-size: 3rem; color: red;" />
-
-	<section>
-		<Searchbox />
+	<div>
+		<NewSearchBox />
 		<a href="/contact" class="button">Contact</a>
-	</section>
+	</div>
 </header>
 
 <style lang="scss">
@@ -52,16 +49,16 @@
 		padding: 2rem;
 		padding-bottom: 1rem;
 
-		> nav {
+		nav {
 			display: none;
 		}
 
-		> a {
+		a {
 			flex: 0 0 3rem;
 			padding: 0.2rem;
 		}
 
-		> section {
+		div {
 			flex-grow: 1;
 			display: flex;
 			flex-direction: row;
@@ -70,7 +67,7 @@
 
 			gap: 0.5rem;
 
-			> .button {
+			.button {
 				display: flex;
 				flex-direction: row;
 				align-items: center;

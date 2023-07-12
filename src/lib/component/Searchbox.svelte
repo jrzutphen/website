@@ -1,6 +1,5 @@
 <script lang="ts">
-	import MagnifyingGlass from "$lib/asset/icon/MagnifyingGlass.svelte";
-	import { Variant } from "$lib/asset/icon/variant";
+	import IconMagnifyingGlass from "~icons/heroicons/magnifying-glass-20-solid";
 	import { onMount } from "svelte";
 	import { query } from "$lib/script/search";
 
@@ -78,12 +77,12 @@
 		on:focusout={focusOut}
 	/>
 	<button type="submit" aria-label="Zoek">
-		<MagnifyingGlass variant={Variant.Mini} />
+		<IconMagnifyingGlass />
 	</button>
 	<div id="backdrop" />
 	<label for="query">
 		<figure>
-			<MagnifyingGlass variant={Variant.Mini} />
+			<IconMagnifyingGlass />
 		</figure>
 		Zoek…
 	</label>

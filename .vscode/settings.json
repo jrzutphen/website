@@ -1,4 +1,5 @@
 {
+	"prettier.documentSelectors": ["**/*.svelte"],
 	"sonarlint.connectedMode.project": {
 		"connectionId": "Jongerenraad Zutphen",
 		"projectKey": "jrzutphen_website"
