@@ -64,12 +64,12 @@ Sinds 12 september 2020
 
 ---
 
-# Wat ga ik **zeggen**?
+# Waar ga ik het over hebben?
 
-1) Wat doen wij?
-2) Wat willen wij doen?
-3) Waarom lukt dat niet?
-4) Hoe kunnen we dat oplossen?
+1. Wat doen wij?
+2. Wat willen wij doen?
+3. Waarom lukt dat niet?
+4. Hoe kunnen we dat oplossen?
 
 ---
 
@@ -86,22 +86,22 @@ Assisteren, organiseren, adviseren, en meer
 
 # **Assisteren**
 
-* Onderzoek LHBTI+ jongeren
-* Omgevingsvisie 2040
-* Gemeenteraadsverkiezingen 2022
-* Programmacommissie Hanzejaar
-* Ouder- en jeugdsteunpunt
+- Onderzoek LHBTI+ jongeren
+- Omgevingsvisie 2040
+- Gemeenteraadsverkiezingen 2022
+- Programmacommissie Hanzejaar
+- Ouder- en jeugdsteunpunt
 
 ---
 
 # **Organiseren**
 
-* Your Pride
-* Anoroc
-* Cruyff Court
-* Jong op de lijst
-* Inputsessie omgevingsvisie
-* Banden leggen en samenwerken
+- Your Pride
+- Anoroc
+- Cruyff Court
+- Jong op de lijst
+- Inputsessie omgevingsvisie
+- Banden leggen en samenwerken
 
 ![bg right contain](asset/anoroc.jpg)
 
@@ -111,12 +111,12 @@ Assisteren, organiseren, adviseren, en meer
 
 # **Adviseren**
 
-* Jongerenbeleid
-* Preventieakkoord
-* Overgang minderjarig naar meerderjarig
-* LHBTI+ jongeren
-* Omgevingsvisie 2040
-* Verschillende externe partijen (Villa Pinedo)
+- Jongerenbeleid
+- Preventieakkoord
+- Overgang minderjarig naar meerderjarig
+- LHBTI+ jongeren
+- Omgevingsvisie 2040
+- Verschillende externe partijen (Villa Pinedo)
   <!--
   Wij ondersteunen Villa Pinedo om een campagne te starten voor meer bekendheid in Zutphen. Villa Pinedo helpt jongeren met gescheiden ouders.
   -->
@@ -127,9 +127,9 @@ Assisteren, organiseren, adviseren, en meer
 
 # En **meer**
 
-* Vertegenwoordiging bij NJR
-* Burgemeestertrainingen jongerenparticipatie VNG
-* Congres Lokale Preventieakkoorden
+- Vertegenwoordiging bij NJR
+- Burgemeestertrainingen jongerenparticipatie VNG
+- Congres Lokale Preventieakkoorden
 
 ![bg right 90%](asset/burgemeestersessie.jpg)
 
@@ -162,9 +162,9 @@ _paginate: false
 
 * Studieplekken
 * Beter onderzoek
+* Een grotere achterban
 * Persoonlijker en toegankelijker
 * Meer, betere, uitgebreide adviezen
-* Een grotere achterban
 * Meer evenementen
 
 ---
@@ -195,11 +195,11 @@ _paginate: false
   <!--
   Waarom? Veel werk, weinig resultaat & geen geld.
   -->
-* Wie gaat naar congressen, vergaderingen?
-* Wekelijkse social posts
+* Wie gaat naar congressen, ontmoetingen?
+* Wekelijkse posts op socials
 * Ondanks resultaat is het einde in zicht
   <!--
-  2 evenementen, burgemeestertraining, rapport, krantenartikels
+  2 evenementen, burgemeestertraining, rapport, krantenartikels, Hanzejaar
   -->
 
 ---
@@ -246,14 +246,18 @@ _paginate: false
 
 ---
 
+<!--
+_footer: Afbeelding © NJR
+-->
+
 # Participatie
 
-* NJR en NJi
+- NJR en NJi
   <!--
   Nationale Jeugdraad & Nederlands Jeugdinstituut
   -->
-* _Children's Participation: From Tokenism to Citizenship_, Roger A. Hart, 1992, UNICEF
-* Schijnparticipatie
+- _Children's Participation: From Tokenism to Citizenship_, Roger A. Hart, 1992, UNICEF
+- Schijnparticipatie
   <!--
   Afkopen
   Alleen in laten spreken op niet belangrijke onderwerpen, en de lastige beslissingen zelf maken
@@ -272,6 +276,10 @@ _paginate: false
 ![bg right 95%](asset/participatieladder.png)
 
 ---
+
+<!--
+_footer: Afbeelding © CHOICE
+-->
 
 # Flower of Participation
 
@@ -348,9 +356,9 @@ Bronnen: NJR, nationale ombudsman, Movisie, NJi
   Identiek aan BASD 
   -->
 * Operationele kosten
-  * Website
-  * Cloud werkomgeving
-  * Telefoon
+  - Website
+  - Cloud werkomgeving
+  - Telefoon
   * Bankrekening
   * Boekhoudsysteem
   * Verzekeringen
