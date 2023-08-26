@@ -314,7 +314,7 @@ _paginate: false
 
 # Dus wat vragen we **daadwerkelijk**?
 
-Bronnen: NJR, nationale ombudsman, Movisie, NJi
+Bronnen: [NJR](https://njr.nl/nl/verhalen/erkenning-verwachten), [nationale ombudsman](https://nationaleombudsman.nl/nieuws/artikel/2021/burgerinitiatief-wat-is-dat-nou-eigenlijk), [Movisie](https://movisie.nl/artikel/tijd-om-te-gaan-doen-wat-werkt-jongerenparticipatie), [NJi](https://nji.nl/system/files/2021-04/NJi-Handreiking-duurzame-jongerenparticipatie.pdf)
 
 ---
 
@@ -328,7 +328,7 @@ Bronnen: NJR, nationale ombudsman, Movisie, NJi
   <!--
   Niets zo frustrerend als loze beloften en van het kastje naar de muur gestuurd worden.
   -->
-* Duidelijkheid over de mogelijkheden om mee te kunnen praten.
+* Duidelijkheid over de mogelijkheden om mee te kunnen praten
   <!--
   Op welke thema's kunnen we input leveren (en welke juist niet), wat zijn de mogelijkheden binnen de gemeente, en op welke voorwaarden kunnen we meedenken?
   -->
@@ -417,12 +417,18 @@ _paginate: false
 
 # Hoeveel is dat in totaal?
 
-€18,000 / jaar
+€20,000 / jaar
 
 <!--
-Als we intern bij de gemeente kunnen, €14,000 / jaar
+Als we intern bij de gemeente kunnen, €15,000 / jaar
+
+Dit is gelijk aan de reeds bestaande subsidies vaan Comité Open Monumentendagen, Hof van Heeckeren, St. Lokale Omroep Berkelstroom, en Stichting IJsselbiënnale
+
+In product 632 "Jeugd algemeen" is er vorig jaar €529,000 positief saldo overgehouden, in 634 "Preventie jeugd" €524,000.
 
 Begroting met alle kosten gespecificeerd, inclusief meerdere opties per kostenpost, en motivatie voor alle kosten, is beschikbaar en bespreek ik graag.
+
+Ook heb ik een voorstel voor een verordening gemaakt, op basis van de verordeningen van andere jongerenraden en de BASD. Hierin staat hoe met het budget wordt omgegaan, en de verantwoordelijkheden van de jongerenraad en gemeente naar elkaar toe.
 -->
 
 ---
