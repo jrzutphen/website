@@ -19,3 +19,5 @@ bundle-stats.html
 # Unfortunately, Prettier will consolidate different list styles into one,
 # which is incompatbile with Marp's fragmented list style
 static/slidedeck/**/*.md
+# Similarly, we need to ignore the generated HTML files
+static/slidedeck/**/*.html
