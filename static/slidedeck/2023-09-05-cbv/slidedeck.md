@@ -39,7 +39,7 @@ section::after {
 
 <!--
 _class: lead gaia
-_footer: "![w:42 h:42](asset/jongerenraad.svg) 2023-06-07"
+_footer: "![w:42 h:42](asset/jongerenraad.svg) 2023-09-05"
 _paginate: skip
 -->
 <style scoped>
