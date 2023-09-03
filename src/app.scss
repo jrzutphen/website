@@ -1,18 +1,5 @@
 @use "$lib/style/variable";
-
-@font-face {
-	font-family: Lexend;
-	src: url(/asset/font/Lexend-VariableFont_wght.woff2)
-			format("woff2 supports variations"),
-		url(/asset/font/Lexend-VariableFont_wght.woff2)
-			format("woff2-variations"),
-		url(/asset/font/Lexend-VariableFont_wght.woff2) format("woff2"),
-		local(Lexend);
-	font-display: fallback;
-	font-weight: 100 1000;
-	font-stretch: normal;
-	font-style: normal;
-}
+@import "@fontsource-variable/lexend";
 
 // CSS reset
 
@@ -74,7 +61,9 @@ address {
 
 body {
 	background-color: variable.$color-light;
-	font-family: Lexend, sans-serif;
+	font-family:
+		Lexend Variable,
+		sans-serif;
 	font-size: 16px;
 	font-weight: variable.$font-weight-regular;
 }
