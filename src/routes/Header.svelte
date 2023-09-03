@@ -1,27 +1,17 @@
 <script lang="ts">
-	import Logo from "$lib/asset/graphic/Logo.svg";
-	import Plus from "$lib/asset/icon/Plus.svelte";
-	import { Variant } from "$lib/asset/icon/variant";
-	import NewSearchBox from "$lib/component/NewSearchBox.svelte";
+	import Logo from "$lib/asset/Logo.svg";
+	import SearchBox from "./SearchBox.svelte";
+	import NavigationItem from "./NavigationItem.svelte";
+	import { Variant } from "./NavigationItem.svelte";
 </script>
 
 <header>
 	<nav aria-label="Hoofdnavigatie">
 		<ul>
-			<li>
-				<a href="/over-ons">Over ons</a>
-				<button aria-label="Open submenu" aria-expanded="false">
-					<Plus variant={Variant.Mini} />
-				</button>
-				<ul>
-					<li><a href="/over-ons/bestuur">Bestuur</a></li>
-					<li><a href="/over-ons/leden">Leden</a></li>
-					<li><a href="/over-ons/doelen">Doelen</a></li>
-					<li><a href="/over-ons/tijdlijn">Tijdlijn</a></li>
-				</ul>
-			</li>
-			<li><a href="/blog">Blog</a></li>
-			<li><a href="/documenten">Documenten</a></li>
+			<NavigationItem variant={Variant.Who} />
+			<NavigationItem variant={Variant.What} />
+			<NavigationItem variant={Variant.Docs} />
+			<NavigationItem variant={Variant.Info} />
 		</ul>
 	</nav>
 
@@ -30,8 +20,8 @@
 	</a>
 
 	<div>
-		<NewSearchBox />
-		<a href="/contact" class="button">Contact</a>
+		<SearchBox />
+		<a href="/info/contact" class="button">Contact</a>
 	</div>
 </header>
 
@@ -50,7 +40,17 @@
 		padding-bottom: 1rem;
 
 		nav {
-			display: none;
+			flex: 1 1 0;
+
+			@include mixin.media-to(md) {
+				display: none;
+			}
+
+			ul {
+				display: flex;
+				flex-direction: row;
+				gap: 1rem;
+			}
 		}
 
 		a {
@@ -59,7 +59,7 @@
 		}
 
 		div {
-			flex-grow: 1;
+			flex: 1 1 0;
 			display: flex;
 			flex-direction: row;
 			align-items: center;
@@ -73,15 +73,22 @@
 				align-items: center;
 				justify-content: center;
 
-				padding: 0.55rem 1rem 0.65rem 1rem;
+				height: 3rem;
+
+				padding: 0.5rem 1.5rem;
 				border-radius: 0.5rem;
 				background: variable.$color-accent;
+				transition: background 200ms ease-in-out;
 
 				font-size: 1rem;
-				font-weight: 600;
+				font-weight: variable.$font-weight-semibold;
 				line-height: 1;
-				color: variable.$color-background;
+				color: variable.$color-light;
 				text-decoration: none;
+
+				&:hover {
+					background: variable.$color-dark-accent;
+				}
 			}
 		}
 	}
