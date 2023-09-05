@@ -52,6 +52,16 @@ _paginate: skip
 
 Voor commissie Communicatie & Bestuurlijke vernieuwing
 
+<!--
+Gisteren had ik twee afspraken in de stad. Een was wat eerder klaar en de ander was verlaat, dus ik had opeens 40 minuten vrije tijd.
+
+Normaal gesproken ben ik heel slecht met vrije tijd, ik plan mijn dagen helemaal vol. Maar nu dacht ik, ik verdien even een momentje. Dus ik ben langs de bakker gegaan, heb een belegd broodje gekocht, en ben aan de IJsselkade gaan zitten.
+
+En toen ik aan de IJsselkade zat, dacht ik opeens bij mezelf: "Wat is onze stad toch mooi." Het zonnetje straalde fel, kinderen speelden met hun grootouders op de vernieuwde waterspeelplaats, schepen kabbelde over de IJssel, om 12 uur liepen mensen uit de Hoven over de Oude IJsselbrug om lunch te eten en om half 1 liepen ze weer terug. Ik denk niet dat we er genoeg bij stilstaan hoe mooi Zutphen is.
+
+Dat is waarom ik het zo pijnlijk vind dat sommige jongeren niet in staat zijn om dat te kunnen denken. Omdat bepaalde steegjes, straten, wijken nog onveilig zijn. Omdat er geen woningen voor ze zijn en dus ergens anders heen moeten. Omdat ze gaan studeren en noodgedwongen weg moeten. Omdat er geen rekening met hun gehouden wordt bij de belangrijke politieke keuzes die over hun toekomst gemaakt worden. Wij bestaan voor die jongeren, om onze stad ook voor hun zo mooi te maken als die kan zijn.
+-->
+
 ---
 
 # **Hallo!**
@@ -62,9 +72,16 @@ Voor commissie Communicatie & Bestuurlijke vernieuwing
 
 Sinds 12 september 2020
 
+<!--
+Over een week zijn we 3 jaar oud
+-->
+
 ---
 
-# Waar ga ik het over hebben?
+# Waar gaan we het over hebben?
+<!--
+(Ik)
+-->
 
 1. Wat doen wij?
 2. Wat willen wij doen?
@@ -89,7 +106,6 @@ Assisteren, organiseren, adviseren, en meer
 - Onderzoek LHBTI+ jongeren
 - Omgevingsvisie 2040
 - Gemeenteraadsverkiezingen 2022
-- Programmacommissie Hanzejaar
 - Ouder- en jeugdsteunpunt
 
 ---
@@ -98,9 +114,13 @@ Assisteren, organiseren, adviseren, en meer
 
 - Your Pride
 - Anoroc
+  <!--
+  Helaas door nieuwe maatregelen op het laatste moment afgelast
+  -->
 - Cruyff Court
 - Jong op de lijst
 - Inputsessie omgevingsvisie
+- Programmacommissie Hanzejaar
 - Banden leggen en samenwerken
 
 ![bg right contain](asset/anoroc.jpg)
@@ -160,12 +180,12 @@ _paginate: false
 
 # Meer, beter, **persoonlijker**
 
-* Studieplekken
+* Studieplekkenproject
 * Beter onderzoek
 * Een grotere achterban
 * Persoonlijker en toegankelijker
 * Meer, betere, uitgebreide adviezen
-* Meer evenementen
+* Meer activiteiten
 
 ---
 
@@ -187,19 +207,19 @@ _paginate: false
 
 ---
 
-# We (ik) staan er **alleen** voor
+# We staan er **alleen** voor
 
-* Al 16 maanden
-* 62 geïnteresseerden op scholen
-* Allemaal afgehaakt
+* 16 maanden alleen
   <!--
-  Waarom? Veel werk, weinig resultaat & geen geld.
+  Alle mails, alle projecten, alle congressen en ontmoetingen, wekelijkse posts op socials
   -->
-* Wie gaat naar congressen, ontmoetingen?
-* Wekelijkse posts op socials
+* Scholen langsgegaan: 62 geïnteresseerd
+  <!--
+  Allemaal afgehaakt. Waarom? Veel werk, weinig resultaat & geen geld.
+  -->
 * Ondanks resultaat is het einde in zicht
   <!--
-  2 evenementen, burgemeestertraining, rapport, krantenartikels, Hanzejaar
+  2 evenementen, burgemeestertraining, rapport, krantenartikelen, Hanzejaar
   -->
 
 ---
@@ -207,21 +227,24 @@ _paginate: false
 # We hebben geen **middelen**
 
 * Geen budget
-* Geen kantoor
 * Geen leden
 * Geen contactpersoon
-* Geen nieuws
+* Geen informatie
   <!--
   We hebben ooit aan de griffie gevraagd of die ons op de hoogte kon houden van wat er huidig speelt. Het antwoord was: nee.
+  -->
+* Geen plek
+  <!--
+  Wij kunnen lastig plekken vinden om te vergaderen. Ontmoetingen met externen en leden gaan lastig. We hebben geen plek om onze spullen op te slaan, of post te ontvangen.
   -->
 
 ---
 
 # We hebben geen **tijd**
 
-* Veel gevraagd
-* Geen tijd voor wat wij belangrijk vinden
-* Achter de feiten aan
+* Er wordt veel gevraagd
+* Geen tijd voor wat **wij** belangrijk vinden
+* We lopen achter de feiten aan
   <!--
   Zoals de omgevingsvisie, we hebben een inputsessie georganiseerd, maar de omgevingsvisie was al bijna af.
   -->
@@ -250,7 +273,7 @@ _paginate: false
 _footer: Afbeelding © NJR
 -->
 
-# Participatie
+# **Participatie**
 
 - NJR en NJi
   <!--
@@ -281,7 +304,7 @@ _footer: Afbeelding © NJR
 _footer: Afbeelding © CHOICE
 -->
 
-# Flower of Participation
+# Flower of **Participation**
 
 ![bg right 60%](asset/flower-of-participation.jpg)
 
@@ -318,7 +341,7 @@ Bronnen: [NJR](https://njr.nl/nl/verhalen/erkenning-verwachten), [nationale ombu
 
 ---
 
-# Immaterieel
+# **Immaterieel**
 
 * Een open houding gericht op samenwerking
   <!--
@@ -334,7 +357,7 @@ Bronnen: [NJR](https://njr.nl/nl/verhalen/erkenning-verwachten), [nationale ombu
   -->
 * Geef jongerenparticipatie een duidelijke plek en borging
   <!--
-  Bestuurlijk commitment is geen garantie voor succes. Voor gemeentemedewerkers die aan ons verbonden zijn moet het niet iets zijn "wat je erbij doet". Almaar identificeerde ambtenaren die er echt gemotiveerd voor waren, en zij plukken daar nu de vruchten van.
+  Bestuurlijk commitment is geen garantie voor succes. Voor gemeentemedewerkers die aan ons verbonden zijn moet het niet iets zijn "wat je erbij doet". Alkmaar identificeerde ambtenaren die er echt gemotiveerd voor waren, en zij plukken daar nu de vruchten van.
   -->
 * Ondersteuning wanneer wij het niet weten
   <!--
@@ -347,25 +370,25 @@ Bronnen: [NJR](https://njr.nl/nl/verhalen/erkenning-verwachten), [nationale ombu
 
 ---
 
-# Materieel
+# **Materieel**
 
 * Geld
-* Vacatiegelden
-  <!--
-  €100 / bestuurder / maand
-  Identiek aan BASD 
-  -->
-* Operationele kosten
-  - Website
-  - Cloud werkomgeving
-  - Telefoon
-  * Bankrekening
-  * Boekhoudsysteem
-  * Verzekeringen
+  * Vacatiegelden
+    <!--
+    €100 / bestuurder / maand
+    Iets minder dan de BASD 
+    -->
+  * Operationele kosten
+    - Website
+    - Cloud werkomgeving
+    - Telefoon
+    * Bankrekening
+    * Boekhoudsysteem
+    * Verzekeringen
 
 ---
 
-# Kantoor
+# **Kantoor**
 
 * Fysiek adres
   <!--
@@ -384,6 +407,9 @@ Bronnen: [NJR](https://njr.nl/nl/verhalen/erkenning-verwachten), [nationale ombu
   We hebben geen ruimte waar wij ons materiaal voor alle leden toegankelijk kunnen opslaan. Daarom vallen we terug op de huizen van onze ouders. Het komt vaker voor dat onze leden contactgegevens van ouders moeten delen, zodat een wat flyers kan oppikken bij de ouders van de anderen als diegene niet thuis is. Zo zijn we lastig serieus te nemen.
   -->
 * Kan dit allemaal intern in de gemeente? Top!
+  <!--
+  Mocht er een ruimte qua formaat Satu Mare kamer beschikbaar zijn, dan heeft dit natuurlijk de voorkeur.
+  -->
 * Zo niet, IJsselkade 8
 
 ---
@@ -415,7 +441,7 @@ _class: lead
 _paginate: false
 -->
 
-# Hoeveel is dat in totaal?
+# Hoeveel is dat in **totaal**?
 
 €20,000 / jaar
 
@@ -433,7 +459,7 @@ Ook heb ik een voorstel voor een verordening gemaakt, op basis van de verordenin
 
 ---
 
-# Leesmateriaal
+# **Leesmateriaal**
 
 - [NJi | Handreiking duurzame jongerenparticipatie](https://nji.nl/system/files/2021-04/NJi-Handreiking-duurzame-jongerenparticipatie.pdf)
 - [UNICEF | Children's Participation: From Tokenism to Citizenship](https://unicef-irc.org/publications/pdf/childrens_participation.pdf)
