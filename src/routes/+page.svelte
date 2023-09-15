@@ -1,3 +1,15 @@
+<script lang="ts">
+	import type { WebsiteCarbonResponse } from "$lib/script/websitecarbon";
+	import { getWebsiteCarbon } from "$lib/script/websitecarbon";
+	import { onMount } from "svelte";
+
+	let websiteCarbon: Promise<WebsiteCarbonResponse>;
+
+	onMount(() => {
+		websiteCarbon = getWebsiteCarbon();
+	});
+</script>
+
 <h1>Welcome to SvelteKit</h1>
 <p>
 	Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation
@@ -23,3 +35,11 @@
 <div style="font-weight: 900">Increasingly bolder text</div>
 <div style="font-weight: 950">Increasingly bolder text</div>
 <div style="font-weight: 1000">Increasingly bolder text</div>
+
+{#await websiteCarbon}
+	<p>...waiting</p>
+{:then response}
+	<p>The response is {JSON.stringify(response)}</p>
+{:catch error}
+	<p style="color: red">{error.message}</p>
+{/await}
