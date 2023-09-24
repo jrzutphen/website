@@ -49,6 +49,11 @@ figure {
 	@include font-weight.value(regular, false);
 }
 
+ol,
+ul {
+	padding-left: 1em;
+}
+
 img,
 picture,
 video,
@@ -69,25 +74,14 @@ address {
 	font-style: normal;
 }
 
-// Global styling
-
+// Font settings
 body {
-	background-color: variable.$color-light;
 	font-family:
 		Lextrall Variable,
 		Lexend Variable,
 		sans-serif;
 	font-size: 100%;
 	@include font-weight.value(regular, false);
-}
-
-main {
-	margin: 2rem;
-
-	@include breakpoint.from(md) {
-		max-width: min(50rem, 80vw);
-		margin: 2rem auto;
-	}
 }
 
 p {
@@ -103,6 +97,43 @@ code {
 	font-family:
 		JetBrains Mono,
 		monospace;
+}
+
+// Override font for Prism code blocks
+code[class*="language-"],
+pre[class*="language-"] {
+	font-family:
+		JetBrains Mono,
+		monospace !important;
+}
+
+// Global styling
+
+body {
+	background-color: variable.$color-light;
+
+	main {
+		margin: 0 2rem;
+
+		@include breakpoint.from(md) {
+			max-width: min(50rem, 80vw);
+			margin: 0 auto;
+		}
+
+		h1 {
+			width: 100%;
+			text-align: center;
+			margin-bottom: 0.75rem;
+
+			font-size: 2.5rem;
+			@include font-weight.value(bold, false);
+		}
+
+		h2 {
+			font-size: 1rem;
+			@include font-weight.value(bold, false);
+		}
+	}
 }
 
 // Basic table styling
@@ -137,12 +168,4 @@ table {
 			}
 		}
 	}
-}
-
-// Override font for Prism code blocks
-code[class*="language-"],
-pre[class*="language-"] {
-	font-family:
-		JetBrains Mono,
-		monospace !important;
 }

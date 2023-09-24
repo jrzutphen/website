@@ -10,11 +10,11 @@ Hi!
 You can add dashes---like so :fire:
 How cool is that?
 
-!> Tip
+!> A helpful **tip**
 
-?> Warning
+?> A concerning warning
 
-x> Error
+x> A dangerous error
 
 # GFM
 

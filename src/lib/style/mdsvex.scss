@@ -1,25 +1,105 @@
 @use "$lib/style/variable";
 @use "$lib/style/font-weight";
+@use "sass:color";
 
 // Style hint blocks
-.hint {
+details.hint {
 	&.tip {
-		border-color: variable.$color-primary;
+		--border-color: #{variable.$color-primary};
+		--background-color: #{color.mix(
+				variable.$color-light,
+				variable.$color-primary,
+				$weight: 80%
+			)};
 	}
 
 	&.warn {
-		border-color: variable.$color-accent;
+		--border-color: #{variable.$color-accent};
+		--background-color: #{color.mix(
+				variable.$color-light,
+				variable.$color-accent,
+				$weight: 80%
+			)};
 	}
 
 	&.error {
-		border-color: variable.$color-secondary;
+		--border-color: #{variable.$color-secondary};
+		--background-color: #{color.mix(
+				variable.$color-light,
+				variable.$color-secondary,
+				$weight: 80%
+			)};
 	}
 
-	border-width: 0;
-	border-left-width: 0.25rem;
-	border-style: solid;
+	border: 0.1rem solid var(--border-color);
+	margin-top: 0.5rem;
+	margin-bottom: 1rem;
+	box-shadow: 0.5rem 0.5rem 0 variable.$color-dark;
 
-	padding-left: 0.5rem;
+	summary {
+		display: inline-flex;
+		justify-content: space-between;
+		width: calc(100% - 1rem);
+		line-height: 1.5rem;
+		padding: 0.25rem 0.5rem;
+		background: var(--background-color);
+		cursor: pointer;
+
+		svg {
+			height: 1.5rem;
+		}
+
+		&::marker {
+			display: none;
+		}
+
+		.title {
+			display: inline-flex;
+			gap: 0.25rem;
+
+			@include font-weight.value(bold, false);
+		}
+
+		.chevron {
+			display: inline-flex;
+			height: 1.5rem;
+
+			transition: transform 0.2s ease-in-out;
+		}
+	}
+
+	&:not([open]) {
+		height: 2.2rem;
+	}
+
+	&[open] {
+		summary {
+			.chevron {
+				transform: rotate(90deg);
+			}
+		}
+
+		p {
+			animation: grow 0.2s ease-in-out;
+		}
+	}
+
+	@keyframes grow {
+		0% {
+			transform: scaleY(0);
+		}
+		90% {
+			transform: scaleY(1.1);
+		}
+		100% {
+			transform: scaleY(1);
+		}
+	}
+
+	p {
+		padding: 0.25rem 0.5rem;
+		transform-origin: top center;
+	}
 }
 
 // Override the default font set for pre blocks
@@ -38,6 +118,5 @@ pre.mermaid {
 	ol {
 		color: variable.$color-dark-accent;
 		font-size: 0.8rem;
-		padding-left: 1rem;
 	}
 }
