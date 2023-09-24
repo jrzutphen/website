@@ -6,7 +6,7 @@
 	let websiteCarbon: Promise<WebsiteCarbonResponse>;
 
 	onMount(() => {
-		websiteCarbon = getWebsiteCarbon();
+		websiteCarbon = getWebsiteCarbon("https://wttr.in");
 	});
 </script>
 
