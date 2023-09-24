@@ -3,6 +3,7 @@
 	import "../app.scss";
 	import "prism-themes/themes/prism-darcula.css";
 	import "katex/dist/katex.css";
+	import "@fortawesome/fontawesome-free/css/all.css";
 	import { assets } from "$app/paths";
 	import Header from "./Header.svelte";
 	import { onMount } from "svelte";
