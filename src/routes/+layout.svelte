@@ -1,10 +1,13 @@
 <script lang="ts">
 	import { title, description, url } from "$lib/script/meta";
 	import "../app.scss";
+	import "prism-themes/themes/prism-darcula.css";
+	import "katex/dist/katex.css";
 	import { assets } from "$app/paths";
 	import Header from "./Header.svelte";
 	import { onMount } from "svelte";
 	import { browser } from "$app/environment";
+	import DarkMode from "$lib/script/DarkMode";
 
 	const metaAlt = `
     	Een zonnige, drukke dag aan de IJsselkade in Zutphen.
@@ -14,6 +17,8 @@
     	`.replace(/\s+/g, " ");
 
 	onMount(() => {
+		DarkMode.initialise();
+
 		if (browser) {
 			url.set(window.location.href);
 		}

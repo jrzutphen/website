@@ -1,0 +1,29 @@
+useTabs: true
+tabWidth: 4
+singleQuote: false
+trailingComma: none
+printWidth: 80
+plugins:
+  - "@prettier/plugin-xml"
+  - "prettier-plugin-svelte"
+overrides:
+  # Parsers
+  - files: "*.svelte"
+    options:
+      parser: svelte
+  - files: "*.svx"
+    options:
+      parser: markdown
+  # Settings
+  - files:
+      - "*.yml"
+      - "*.yaml"
+    options:
+      useTabs: false
+      tabWidth: 2
+  - files:
+      - "*.md"
+      - "*.svx"
+    options:
+      useTabs: false
+      tabWidth: 2

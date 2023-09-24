@@ -1,0 +1,43 @@
+@use "$lib/style/variable";
+@use "$lib/style/font-weight";
+
+// Style hint blocks
+.hint {
+	&.tip {
+		border-color: variable.$color-primary;
+	}
+
+	&.warn {
+		border-color: variable.$color-accent;
+	}
+
+	&.error {
+		border-color: variable.$color-secondary;
+	}
+
+	border-width: 0;
+	border-left-width: 0.25rem;
+	border-style: solid;
+
+	padding-left: 0.5rem;
+}
+
+// Override the default font set for pre blocks
+pre.mermaid {
+	font-family:
+		Lextrall Variable,
+		Lexend Variable,
+		sans-serif;
+}
+
+.footnotes {
+	hr {
+		color: variable.$color-dark-accent;
+	}
+
+	ol {
+		color: variable.$color-dark-accent;
+		font-size: 0.8rem;
+		padding-left: 1rem;
+	}
+}

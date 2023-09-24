@@ -1,0 +1,130 @@
+---
+title: "Hello"
+author: Luka
+date: 2020-01-01
+---
+
+# Hello
+
+Hi!
+You can add dashes---like so :fire:
+How cool is that?
+
+!> Tip
+
+?> Warning
+
+x> Error
+
+# GFM
+
+## Autolink literals
+
+www.example.com, https://example.com, and contact@example.com.
+
+## Footnote
+
+A note[^1]
+
+[^1]: Big note.
+
+## Strikethrough {#custom-strikethrough}
+
+~one~ or ~~two~~ tildes.
+
+## Table
+
+| a     | b   |     c |     d     |
+| ----- | :-- | ----: | :-------: |
+| Hello | my  |  dear |  viewer   |
+| Have  | a   |  nice |    day    |
+| See   | you | later | alligator |
+
+## Tasklist
+
+- [ ] to do
+- [x] done
+
+* Hello
+* Next
+
+## Inhoudsopgave
+
+## Another heading
+
+---
+
+separated
+
+@luka
+
+```mermaid
+timeline
+    title Timeline of social media
+    2002 : LinkedIn
+    2004 : Facebook
+         : Google
+    2006 : Twitter
+    2009 : WhatsApp
+    2012 : TikTok
+    2013 : WeChat
+         : Weibo
+         : Vine
+         : Telegram
+```
+
+```mermaid
+mindmap
+  root((mindmap))
+    Origins
+      Long history
+      ::icon(fa fa-book)
+      Popularisation
+        British popular psychology author Tony Buzan
+    Research
+      On effectiveness<br/>and features
+      On Automatic creation
+        Uses
+            Creative techniques
+            Strategic planning
+            Argument mapping
+    Tools
+      Pen and paper
+      Mermaid
+```
+
+## Heading
+
+Lift($L$) can be determined by Lift Coefficient ($C_L$) like the following
+equation.
+
+$$
+L = \frac{1}{2} \rho v^2 S C_L
+$$
+
+## Hell yeah
+
+| Tables        |      Are      |  Cool |
+| ------------- | :-----------: | ----: |
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      |   centered    |   $12 |
+| zebra stripes |   are neat    |    $1 |
+
+```javascript
+function foo(bar) {
+  var a = 42,
+    b = "foo";
+
+  return a + bar(b);
+}
+```
+
+```python
+def foo(bar):
+    a = 42
+    b = "foo"
+
+    return a + bar(b)
+```
+
+## License
