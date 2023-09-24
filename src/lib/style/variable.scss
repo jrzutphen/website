@@ -6,6 +6,17 @@ $color-primary: #145276;
 $color-secondary: #c32232;
 $color-accent: #f69865;
 
+$colors: (
+	dark: $color-dark,
+	darkAccent: $color-dark-accent,
+	light: $color-light,
+	lightAccent: $color-light-accent,
+	primary: $color-primary,
+	secondary: $color-secondary,
+	accent: $color-accent
+);
+
+// TODO Reduce weights by 50 in dark mode
 $font-weight-thin: 100;
 $font-weight-extralight: 200;
 $font-weight-light: 300;
@@ -15,13 +26,3 @@ $font-weight-semibold: 600;
 $font-weight-bold: 700;
 $font-weight-extrabold: 800;
 $font-weight-black: 900;
-
-// Shamelessly stolen from https://tailwindcss.com/docs/responsive-design
-$breakpoints: (
-	xs: 0,
-	sm: 640px,
-	md: 768px,
-	lg: 1024px,
-	xl: 1280px,
-	xxl: 1536px
-);

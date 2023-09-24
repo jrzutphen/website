@@ -200,7 +200,7 @@
 <style lang="scss">
 	@use "sass:color";
 	@use "$lib/style/variable";
-	@use "$lib/style/mixin";
+	@use "$lib/style/breakpoint";
 
 	$focusWidth: 80vw;
 	$height: 3rem;
@@ -216,11 +216,11 @@
 			line-height: 1.2;
 			z-index: 11;
 
-			@include mixin.media-to(md) {
+			@include breakpoint.until(md) {
 				width: 100%;
 			}
 
-			@include mixin.media-from(md) {
+			@include breakpoint.from(md) {
 				width: 12rem;
 			}
 

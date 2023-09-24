@@ -1,4 +1,12 @@
-@use "variable";
+// Shamelessly stolen from https://tailwindcss.com/docs/responsive-design
+$values: (
+	xs: 0,
+	sm: 640px,
+	md: 768px,
+	lg: 1024px,
+	xl: 1280px,
+	xxl: 1536px
+);
 
 /*
  * Returns the value of the breakpoint to be used as the lower bound of a media query.
@@ -7,7 +15,7 @@
  * Provided for consistency with upper-bound($name).
  */
 @function lower-bound($name) {
-	$value: map-get(variable.$breakpoints, $name);
+	$value: map-get($values, $name);
 	@return if($value and $value > 0, $value, null);
 }
 
@@ -18,7 +26,7 @@
  * This is because browsers are weird.
  */
 @function upper-bound($name) {
-	$value: map-get(variable.$breakpoints, $name);
+	$value: map-get($values, $name);
 	@return if($value and $value > 0.02, $value - 0.02, null);
 }
 
@@ -28,7 +36,7 @@
  * If the specified breakpoint is the last breakpoint, returns null.
  */
 @function next-breakpoint($name) {
-	$keys: map-keys(variable.$breakpoints);
+	$keys: map-keys($values);
 	$index: index($keys, $name);
 	@if not $index {
 		@error "No value found for breakpoint #{$name}.";
@@ -36,27 +44,29 @@
 	@return if($index < length($keys), nth($keys, $index + 1), null);
 }
 
-@mixin media-from($breakpoint) {
+@mixin from($breakpoint) {
 	$min: lower-bound($breakpoint);
 	@if not $min {
 		@error "No value found for breakpoint #{$breakpoint}.";
 	}
+
 	@media screen and (min-width: $min) {
 		@content;
 	}
 }
 
-@mixin media-to($breakpoint) {
+@mixin until($breakpoint) {
 	$max: upper-bound($breakpoint);
 	@if not $max {
 		@error "No value found for breakpoint #{$upperBound}, or the breakpoint is too small.";
 	}
+
 	@media screen and (max-width: $max) {
 		@content;
 	}
 }
 
-@mixin media-between($lowerBreakpoint, $upperBreakpoint) {
+@mixin between($lowerBreakpoint, $upperBreakpoint) {
 	$min: lower-bound($lowerBreakpoint);
 	@if not $min {
 		@error "No value found for breakpoint #{$lowerBound}.";
@@ -65,12 +75,13 @@
 	@if not $max {
 		@error "No value found for breakpoint #{$upperBound}, or the breakpoint is too small.";
 	}
+
 	@media screen and (min-width: $min) and (max-width: $max) {
 		@content;
 	}
 }
 
-@mixin media-only($breakpoint) {
+@mixin only($breakpoint) {
 	$min: lower-bound($breakpoint);
 	@if not $min {
 		@error "No value found for breakpoint #{$breakpoint}.";
@@ -83,6 +94,7 @@
 	@if not $max {
 		@error "No value found for breakpoint #{$nextBreakpoint}, or the breakpoint is too small.";
 	}
+
 	@media screen and (min-width: $min) and (max-width: $max) {
 		@content;
 	}

@@ -1,0 +1,45 @@
+@use "sass:selector";
+
+$values: (
+	thin: 100,
+	extra-light: 200,
+	light: 300,
+	regular: 400,
+	medium: 500,
+	semi-bold: 600,
+	bold: 700,
+	extra-bold: 800,
+	black: 900
+);
+
+/*
+ * Returns the value of the font weight to be used on a dark or light background.
+ *
+ * If the background is dark, it returns the font weight minus 50,
+ * except if this would result in a value less than 100.
+ * If the font weight does not exist, returns null.
+ */
+@function value($name, $darkBackground) {
+	$value: map-get($values, $name);
+	@return if(
+		$value,
+		if($darkBackground, max($value - 50, 100), $value),
+		null
+	);
+}
+
+@mixin value($name, $darkBackground) {
+	$value: value($name, $darkBackground);
+	$valueInverted: value($name, not $darkBackground);
+	@if not $value {
+		@error "No value found for font weight #{$name}.";
+	}
+
+	@at-root #{selector.nest('html[data-theme="light"]', &)} {
+		font-weight: $value;
+	}
+
+	@at-root #{selector.nest('html[data-theme="dark"]', &)} {
+		font-weight: $valueInverted;
+	}
+}

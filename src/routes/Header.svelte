@@ -1,8 +1,9 @@
 <script lang="ts">
 	import Logo from "$lib/asset/Logo.svg";
-	import SearchBox from "./SearchBox.svelte";
+	// import SearchBox from "./SearchBox.svelte";
 	import NavigationItem from "./NavigationItem.svelte";
 	import { Variant } from "./NavigationItem.svelte";
+	// import DarkModeToggle from "./DarkModeToggle.svelte";
 </script>
 
 <header>
@@ -20,7 +21,8 @@
 	</a>
 
 	<div>
-		<SearchBox />
+		<!-- <DarkModeToggle /> -->
+		<!-- <SearchBox /> -->
 		<a href="/info/contact" class="button">Contact</a>
 	</div>
 </header>
@@ -28,7 +30,7 @@
 <style lang="scss">
 	@use "sass:color";
 	@use "$lib/style/variable";
-	@use "$lib/style/mixin";
+	@use "$lib/style/breakpoint";
 
 	header {
 		display: flex;
@@ -42,7 +44,7 @@
 		nav {
 			flex: 1 1 0;
 
-			@include mixin.media-to(md) {
+			@include breakpoint.until(md) {
 				display: none;
 			}
 
@@ -50,6 +52,7 @@
 				display: flex;
 				flex-direction: row;
 				gap: 1rem;
+				list-style: none;
 			}
 		}
 

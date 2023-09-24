@@ -197,7 +197,8 @@
 <style lang="scss">
 	@use "sass:color";
 	@use "$lib/style/variable";
-	@use "$lib/style/mixin";
+	@use "$lib/style/breakpoint";
+
 	li {
 		position: relative;
 		padding: 0.5rem;
@@ -285,12 +286,15 @@
 				}
 
 				ul {
+					list-style: none;
+
 					display: flex;
 					flex-direction: column;
 					gap: 0.5rem;
 
 					background: variable.$color-light-accent;
 					padding: 2rem;
+					border: 0.25rem solid variable.$color-light;
 					box-shadow: 0.5rem 0.5rem 0 variable.$color-dark;
 
 					li {
@@ -301,6 +305,10 @@
 							a {
 								figure {
 									background: variable.$color-accent;
+									// TODO: decide if we also change border
+									// border-color: variable.$color-accent;
+									box-shadow: 0.25rem 0.25rem 0
+										variable.$color-dark-accent;
 								}
 
 								div {
@@ -317,11 +325,16 @@
 
 							figure {
 								background: variable.$color-light;
-								transition: background 200ms ease-in-out;
+								transition:
+									background-color 200ms ease-in-out,
+									border-color 200ms ease-in-out,
+									box-shadow 200ms ease-in-out;
 								width: fit-content;
 								height: fit-content;
 								padding: 0.5rem;
 
+								border: 0.125rem solid
+									variable.$color-light-accent;
 								box-shadow: 0.25rem 0.25rem 0
 									variable.$color-dark;
 
