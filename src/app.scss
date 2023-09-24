@@ -1,5 +1,22 @@
 @use "$lib/style/variable";
+@use "$lib/style/font-weight";
+@use "$lib/style/breakpoint";
 @import "@fontsource-variable/lexend";
+@import "@fontsource-variable/jetbrains-mono";
+
+@font-face {
+	$url: "/asset/font/Lextrall[HEXP,wght].woff2";
+	font-family: Lextrall Variable;
+	src:
+		url($url) format("woff2 supports variations"),
+		url($url) format("woff2-variations"),
+		url($url) format("woff2"),
+		local(Lextrall);
+	font-display: fallback;
+	font-weight: 100 900;
+	font-stretch: normal;
+	font-style: normal;
+}
 
 // CSS reset
 
@@ -29,12 +46,7 @@ ul,
 figure {
 	margin: 0;
 	padding: 0;
-	font-weight: variable.$font-weight-semibold;
-}
-
-ol,
-ul {
-	list-style: none;
+	@include font-weight.value(regular, false);
 }
 
 img,
@@ -62,8 +74,75 @@ address {
 body {
 	background-color: variable.$color-light;
 	font-family:
+		Lextrall Variable,
 		Lexend Variable,
 		sans-serif;
-	font-size: 16px;
-	font-weight: variable.$font-weight-regular;
+	font-size: 100%;
+	@include font-weight.value(regular, false);
+}
+
+main {
+	margin: 2rem;
+
+	@include breakpoint.from(md) {
+		max-width: min(50rem, 80vw);
+		margin: 2rem auto;
+	}
+}
+
+p {
+	font-feature-settings: "onum";
+}
+
+abbr {
+	font-feature-settings: "c2sc";
+}
+
+pre,
+code {
+	font-family:
+		JetBrains Mono,
+		monospace;
+}
+
+// Basic table styling
+//  alternating row colours, borders, and padding
+table {
+	border-spacing: 0;
+	border-collapse: collapse;
+	margin-top: 0;
+	margin-bottom: 1rem;
+	width: max-content;
+	max-width: 100%;
+	overflow: auto;
+
+	tr {
+		th,
+		td {
+			padding: 0.5rem 1rem;
+			border: 1px solid variable.$color-light-accent;
+		}
+
+		th {
+			background-color: variable.$color-light-accent;
+			border-color: variable.$color-light;
+			border-bottom: 2px solid variable.$color-dark;
+			@include font-weight.value(bold, false);
+		}
+
+		&:nth-child(even) {
+			td {
+				background-color: variable.$color-light-accent;
+				border-color: variable.$color-light;
+			}
+		}
+	}
+}
+
+// Override font for Prism code blocks
+code[class*="language-"],
+pre[class*="language-"] {
+	font-family:
+		JetBrains Mono,
+		monospace !important;
 }

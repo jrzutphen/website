@@ -36,6 +36,13 @@
 <div style="font-weight: 950">Increasingly bolder text</div>
 <div style="font-weight: 1000">Increasingly bolder text</div>
 
+<p style="padding: 5rem;">
+	Welkom op onze website. Hier vind je informatie over vrij weinig, maar het
+	is wel gezellig. Wist je dat deze tekst in een paragraaf staat? Het is
+	geschreven in <abbr title="Hypertext Markup Language">HTML</abbr>. Deze taal
+	wordt gebruikt om webpagina's te maken. Het is bedacht in 1990.
+</p>
+
 {#await websiteCarbon}
 	<p>...waiting</p>
 {:then response}
