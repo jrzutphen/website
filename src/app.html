@@ -6,6 +6,45 @@
 		%sveltekit.head%
 	</head>
 	<body data-sveltekit-preload-data="hover">
+		<script>
+			// Update `DarkMode.ts` if you change this
+
+			const themes = ["light", "dark"];
+
+			const watchTheme = (theme) =>
+				window.matchMedia(`(prefers-color-scheme: ${theme})`);
+
+			function getUserPreference() {
+				if (watchTheme("dark").matches) {
+					return "dark";
+				} else if (watchTheme("light").matches) {
+					return "light";
+				}
+
+				// This shouldn't happen, but just in case, default to light
+				return "light";
+			}
+
+			const LOCAL_STORAGE_KEY = "colour-theme";
+
+			function setAttribute(theme) {
+				document.documentElement.setAttribute("data-theme", theme);
+			}
+
+			function initialise() {
+				const value = localStorage.getItem(LOCAL_STORAGE_KEY);
+				if (value && themes.includes(value)) {
+					setAttribute(value);
+				} else {
+					setAttribute(getUserPreference());
+				}
+			}
+
+			// TODO remove when we actually support it
+			localStorage.setItem(LOCAL_STORAGE_KEY, "light");
+			initialise();
+		</script>
+
 		<div style="display: contents">%sveltekit.body%</div>
 	</body>
 </html>
