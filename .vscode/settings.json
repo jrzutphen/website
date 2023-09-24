@@ -1,7 +1,23 @@
 {
-	"prettier.documentSelectors": ["**/*.svelte"],
+	"prettier.documentSelectors": [
+		"**/*.svelte",
+		"**/*.svx",
+		"**/*.svg",
+		"**/*.xml"
+	],
 	"sonarlint.connectedMode.project": {
 		"connectionId": "Jongerenraad Zutphen",
 		"projectKey": "jrzutphen_website"
-	}
+	},
+	"cSpell.words": [
+		"fontsource",
+		"heroicons",
+		"HEXP",
+		"jetbrains",
+		"lexend",
+		"Lextrall",
+		"rehype",
+		"websitecarbon",
+		"wght"
+	]
 }

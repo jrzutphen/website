@@ -1,0 +1,13 @@
+{
+	"recommendations": [
+		"sebsojeda.vscode-svx",
+		"seatonjiang.gitmoji-vscode",
+		"marp-team.marp-vscode",
+		"esbenp.prettier-vscode",
+		"svelte.svelte-vscode",
+		"jock.svg",
+		"yzhang.markdown-all-in-one",
+		"davidanson.vscode-markdownlint",
+		"sonarsource.sonarlint-vscode"
+	]
+}
