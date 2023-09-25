@@ -122,30 +122,37 @@ body {
 	background-color: variable.$color-light;
 	color: variable.$color-dark;
 
-	main {
-		$main-margin: 2rem;
-		width: calc(100dvw - #{$main-margin} * 2);
-		margin: 0 $main-margin;
-		margin-bottom: 3rem;
+	#page-grid {
+		width: 100dvw;
+		height: 100dvh;
+		display: grid;
+		grid-template-rows: auto 1fr auto;
 
-		@include breakpoint.from(md) {
-			max-width: min(50rem, 80dvw);
-			margin: 0 auto;
-			margin-bottom: 5rem;
-		}
+		main {
+			$main-margin: 2rem;
+			width: calc(100dvw - #{$main-margin} * 2);
+			margin: 0 $main-margin;
+			margin-bottom: 3rem;
 
-		h1 {
-			width: 100%;
-			text-align: center;
-			margin-bottom: 0.75rem;
+			@include breakpoint.from(md) {
+				max-width: min(50rem, 80dvw);
+				margin: 0 auto;
+				margin-bottom: 5rem;
+			}
 
-			font-size: 2.5rem;
-			@include font-weight.value(bold, false);
-		}
+			h1 {
+				width: 100%;
+				text-align: center;
+				margin-bottom: 0.75rem;
 
-		h2 {
-			font-size: 1rem;
-			@include font-weight.value(bold, false);
+				font-size: 2.5rem;
+				@include font-weight.value(bold, false);
+			}
+
+			h2 {
+				font-size: 1rem;
+				@include font-weight.value(bold, false);
+			}
 		}
 	}
 }

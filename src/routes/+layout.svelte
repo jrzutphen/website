@@ -91,11 +91,12 @@
 	/>
 </svelte:head>
 
-<Header />
+<div id="page-grid">
+	<Header />
+	<main>
+		<slot />
+	</main>
+	<Footer />
+</div>
 
-<main>
-	<slot />
-</main>
-
-<Footer />
 <BottomNavigation />

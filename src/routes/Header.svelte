@@ -41,8 +41,11 @@
 		padding: 2rem;
 		padding-bottom: 1rem;
 
-		max-width: 100rem;
-		margin: 0 auto;
+		@media screen and (min-width: 100rem) {
+			$padding: calc((100dvw - 100rem) / 2);
+			padding-left: $padding !important;
+			padding-right: $padding !important;
+		}
 
 		nav {
 			flex: 1 1 0;
