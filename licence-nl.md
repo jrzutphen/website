@@ -1,6 +1,6 @@
 # Licentie
 
-(Deze licentie is een vertaling van de [Engelse versie](license.md) en is niet juridisch bindend.)
+(Deze licentie is een vertaling van de [Engelse versie](license-en.md) en is niet juridisch bindend.)
 
 Dit is vrije en onbelaste software die in het publieke domein is vrijgegeven.
 

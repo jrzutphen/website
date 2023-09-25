@@ -32,7 +32,7 @@
 	});
 </script>
 
-<h1>Fallback: {title}</h1>
-<p class="date">on: {dateFormatted}</p>
-<p class="date">by: {author}</p>
+<h1>{title}</h1>
+<p class="date">Geplaatst op: {dateFormatted}</p>
+<p class="date">Geplaatst door: {author}</p>
 <slot />
