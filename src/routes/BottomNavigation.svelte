@@ -141,7 +141,7 @@
 				list-style: none;
 				display: flex;
 				flex-direction: row;
-				justify-content: space-between;
+				justify-content: space-evenly;
 
 				li {
 					$icon-size: 1.5rem;
@@ -149,16 +149,18 @@
 					a {
 						color: variable.$color-dark;
 						text-decoration: none;
+						width: calc($icon-size + 2rem);
+						height: calc($icon-size + 0.25rem);
 
 						figure {
 							margin: 0 0.875rem;
 							padding: 0.125rem;
 							background: transparent;
 							transition:
-								margin 200ms ease-in-out,
-								padding 200ms ease-in-out,
-								background-color 200ms ease-in-out,
-								width 200ms ease-in-out;
+								margin 200ms 100ms ease-in-out,
+								padding 200ms 100ms ease-in-out,
+								width 200ms 100ms ease-in-out,
+								background-color 200ms ease-in-out;
 							width: calc($icon-size + 0.25rem);
 							height: calc($icon-size + 0.25rem);
 							position: relative;
@@ -195,7 +197,7 @@
 					&:hover {
 						a {
 							figure {
-								background: variable.$color-light;
+								background: variable.$color-accent;
 								margin: 0;
 								padding: 0.125rem 1rem;
 								width: calc($icon-size + 2rem);
