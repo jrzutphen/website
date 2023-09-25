@@ -1,18 +1,18 @@
 <script lang="ts">
 	import Logo from "$lib/asset/Logo.svg";
 	// import SearchBox from "./SearchBox.svelte";
-	import NavigationItem from "./NavigationItem.svelte";
-	import { Variant } from "./NavigationItem.svelte";
+	import HeaderNavigationItem from "./HeaderNavigationItem.svelte";
+	import { Variant } from "./HeaderNavigationItem.svelte";
 	// import DarkModeToggle from "./DarkModeToggle.svelte";
 </script>
 
 <header>
 	<nav aria-label="Hoofdnavigatie">
 		<ul>
-			<NavigationItem variant={Variant.Who} />
-			<NavigationItem variant={Variant.What} />
-			<NavigationItem variant={Variant.Docs} />
-			<NavigationItem variant={Variant.Info} />
+			<HeaderNavigationItem variant={Variant.Who} />
+			<HeaderNavigationItem variant={Variant.What} />
+			<HeaderNavigationItem variant={Variant.Docs} />
+			<HeaderNavigationItem variant={Variant.Info} />
 		</ul>
 	</nav>
 

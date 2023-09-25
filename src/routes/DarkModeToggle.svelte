@@ -66,6 +66,7 @@
 			color: variable.$color-dark-accent;
 
 			.tooltip {
+				z-index: 2;
 				overflow: hidden;
 				white-space: nowrap;
 				display: block;

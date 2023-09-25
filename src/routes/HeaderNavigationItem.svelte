@@ -233,6 +233,7 @@
 			}
 		}
 
+		// TODO :hover
 		&:hover {
 			$padding: 1rem;
 			$offset: 0.5rem;
@@ -303,11 +304,17 @@
 
 						&:hover {
 							a {
+								margin-left: 0;
+								margin-right: 2rem;
 								figure {
 									background: variable.$color-accent;
 									// TODO: decide if we also change border
 									// border-color: variable.$color-accent;
-									box-shadow: 0.25rem 0.25rem 0
+									margin: 0.125rem;
+									border-width: 0;
+									width: calc(1.5rem + 1rem);
+									height: calc(1.5rem + 1rem);
+									box-shadow: 0 0 0 0.25rem
 										variable.$color-dark-accent;
 								}
 
@@ -318,25 +325,30 @@
 						}
 
 						a {
+							margin: 0 1rem;
 							display: flex;
 							flex-direction: row;
 							align-items: center;
 							gap: 1rem;
+							transition: margin 200ms ease-in-out;
 
 							figure {
 								background: variable.$color-light;
 								transition:
 									background-color 200ms ease-in-out,
 									border-color 200ms ease-in-out,
+									border-width 200ms ease-in-out,
+									margin 200ms ease-in-out,
+									width 200ms ease-in-out,
+									height 200ms ease-in-out,
 									box-shadow 200ms ease-in-out;
-								width: fit-content;
-								height: fit-content;
+								width: calc(1.5rem + 1rem + 0.25rem);
+								height: calc(1.5rem + 1rem + 0.25rem);
 								padding: 0.5rem;
 
 								border: 0.125rem solid
 									variable.$color-light-accent;
-								box-shadow: 0.25rem 0.25rem 0
-									variable.$color-dark;
+								box-shadow: 0.375rem 0.375rem 0 -0.125rem variable.$color-dark;
 
 								:global(svg) {
 									width: 1.5rem;

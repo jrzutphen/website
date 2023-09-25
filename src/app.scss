@@ -109,14 +109,20 @@ pre[class*="language-"] {
 
 // Global styling
 
+a {
+	color: variable.$color-primary;
+}
+
 body {
 	background-color: variable.$color-light;
 
 	main {
-		margin: 0 2rem;
+		$main-margin: 2rem;
+		width: calc(100dvw - #{$main-margin} * 2);
+		margin: 0 $main-margin;
 
 		@include breakpoint.from(md) {
-			max-width: min(50rem, 80vw);
+			max-width: min(50rem, 80dvw);
 			margin: 0 auto;
 		}
 
