@@ -2,6 +2,8 @@
 	import Logo from "$lib/asset/Logo.svg";
 	import Instagram from "~icons/mdi/instagram";
 	import LinkedIn from "~icons/mdi/linkedin";
+	import Facebook from "~icons/mdi/facebook";
+	import WhatsApp from "~icons/mdi/whatsapp";
 	import Location from "~icons/heroicons/map-pin-20-solid";
 	import Email from "~icons/heroicons/envelope-20-solid";
 	import Phone from "~icons/heroicons/phone-20-solid";
@@ -29,6 +31,16 @@
 				<li>
 					<a href="//linkedin.com/company/jrzutphen">
 						<LinkedIn />
+					</a>
+				</li>
+				<li>
+					<a href="//facebook.com/jrzutphen">
+						<Facebook />
+					</a>
+				</li>
+				<li>
+					<a href="//wa.me/message/USMQ665MUEBQO1">
+						<WhatsApp />
 					</a>
 				</li>
 			</ul>
@@ -194,6 +206,14 @@
 					}
 
 					&#contact {
+						display: flex;
+						flex-direction: column;
+						align-items: flex-start;
+
+						@include breakpoint.from(md) {
+							align-items: center;
+						}
+
 						ul {
 							display: flex;
 							flex-direction: column;
@@ -323,6 +343,7 @@
 						}
 
 						a {
+							text-align: right;
 							text-decoration: none;
 							color: variable.$color-light;
 							transition: color 200ms ease-in-out;
