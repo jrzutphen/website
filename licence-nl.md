@@ -8,7 +8,7 @@ Voor meer informatie, raadpleeg de [volledige juridische tekst](#juridische-teks
 
 ## Uitgesloten bestanden
 
-Het bestand `Cover.png` is een auteursrechtelijk beschermd bestand van
+Het bestand `Cover.jpg` is een auteursrechtelijk beschermd bestand van
 [Pieter Kers](https://beeld.nu) en valt niet onder de licentie van dit project.
 
 ## Juridische tekst

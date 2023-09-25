@@ -8,7 +8,7 @@ For more information, please refer to the [full legal text](#legal-text).
 
 ## Excluded files
 
-The file `Cover.png` is a copyrighted file belonging to [Pieter Kers](https://beeld.nu)
+The file `Cover.jpg` is a copyrighted file belonging to [Pieter Kers](https://beeld.nu)
 and is not covered by the license of this project.
 
 ## Legal text
