@@ -28,9 +28,9 @@
 </section>
 
 <style lang="scss">
-	@use "$lib/style/variable.scss";
-	@use "$lib/style/font-weight.scss";
-	@use "$lib/style/breakpoint.scss";
+	@use "$lib/style/variable";
+	@use "$lib/style/font-weight";
+	@use "$lib/style/breakpoint";
 	@use "sass:color";
 
 	$header-height: 6rem;

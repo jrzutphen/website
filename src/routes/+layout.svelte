@@ -10,6 +10,7 @@
 	import { browser } from "$app/environment";
 	import DarkMode from "$lib/script/DarkMode";
 	import BottomNavigation from "./BottomNavigation.svelte";
+	import Footer from "./Footer.svelte";
 
 	const metaAlt = `
     	Een zonnige, drukke dag aan de IJsselkade in Zutphen.
@@ -96,4 +97,5 @@
 	<slot />
 </main>
 
+<Footer />
 <BottomNavigation />
