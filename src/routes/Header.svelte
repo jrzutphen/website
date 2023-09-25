@@ -41,6 +41,9 @@
 		padding: 2rem;
 		padding-bottom: 1rem;
 
+		max-width: 100rem;
+		margin: 0 auto;
+
 		nav {
 			flex: 1 1 0;
 

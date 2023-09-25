@@ -94,6 +94,9 @@
 
 		@include breakpoint.from(md) {
 			margin-bottom: 0;
+			position: fixed;
+			bottom: 0;
+			width: 100dvw;
 		}
 
 		> section {
@@ -107,6 +110,12 @@
 				flex-direction: row;
 				align-items: flex-end;
 				padding: 2rem;
+			}
+
+			@media screen and (min-width: 100rem) {
+				$padding: calc((100dvw - 100rem) / 2);
+				padding-left: $padding !important;
+				padding-right: $padding !important;
 			}
 
 			&#top {
