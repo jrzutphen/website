@@ -37,7 +37,7 @@
 	},
 	"scripts": {
 		"preinstall": "npx only-allow pnpm",
-		"postinstall": "pnpx playwright install --with-deps",
+		"postinstall": "pnpx playwright install --with-deps && svelte-kit sync --mode development",
 		"prepare": "husky install",
 		"dev": "vite dev",
 		"build": "vite build && pnpm visualise && pnpm sitemap",
