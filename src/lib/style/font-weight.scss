@@ -35,11 +35,11 @@ $values: (
 		@error "No value found for font weight #{$name}.";
 	}
 
-	@at-root #{selector.nest('html[data-theme="light"]', &)} {
+	@at-root #{selector.nest(':global(html[data-theme="light"])', &)} {
 		font-weight: $value;
 	}
 
-	@at-root #{selector.nest('html[data-theme="dark"]', &)} {
+	@at-root #{selector.nest(':global(html[data-theme="dark"])', &)} {
 		font-weight: $valueInverted;
 	}
 }
