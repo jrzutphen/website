@@ -198,6 +198,7 @@
 	@use "sass:color";
 	@use "$lib/style/variable";
 	@use "$lib/style/breakpoint";
+	@use "$lib/style/mixin";
 
 	li {
 		position: relative;
@@ -294,8 +295,7 @@
 
 					background: variable.$color-light-accent;
 					padding: 2rem;
-					border: 0.25rem solid variable.$color-light;
-					box-shadow: 0.5rem 0.5rem 0 variable.$color-dark;
+					@include mixin.border-and-shadow(0.25rem, 0.5rem);
 
 					li {
 						padding: 0.5rem;
@@ -323,9 +323,11 @@
 								height: calc(1.5rem + 1rem + 0.25rem);
 								padding: 0.5rem;
 
-								border: 0.125rem solid
-									variable.$color-light-accent;
-								box-shadow: 0.375rem 0.375rem 0 -0.125rem variable.$color-dark;
+								@include mixin.border-and-shadow(
+									0.125rem,
+									0.25rem,
+									$borderColor: variable.$color-light-accent
+								);
 
 								:global(svg) {
 									width: 1.5rem;

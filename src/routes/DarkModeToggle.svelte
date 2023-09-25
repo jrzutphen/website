@@ -40,6 +40,7 @@
 <style lang="scss">
 	@use "$lib/style/variable";
 	@use "$lib/style/font-weight";
+	@use "$lib/style/mixin";
 
 	button {
 		position: relative;
@@ -88,11 +89,10 @@
 
 				padding: 1em;
 				background: variable.$color-light-accent;
-				border: 0.25em solid variable.$color-light;
 				color: variable.$color-dark;
 				font-size: 0.75rem;
 				@include font-weight.value(semi-bold, false);
-				box-shadow: 0.5em 0.5em 0 variable.$color-dark;
+				@include mixin.border-and-shadow(0.25em, 0.5em);
 			}
 		}
 	}

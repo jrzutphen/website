@@ -1,0 +1,19 @@
+@use "./variable.scss";
+@use "./font-weight.scss" as font-weight-mixin;
+
+@mixin font-weight($name, $darkBackground) {
+	@include font-weight-mixin.value($name, $darkBackground);
+}
+
+@mixin border-and-shadow(
+	$borderWidth,
+	$shadowWidth,
+	$borderColor: variable.$color-light,
+	$shadowColor: variable.$color-dark
+) {
+	$shadowOffset: 2 * $borderWidth + $shadowWidth;
+	$shadowSpread: $borderWidth * -1;
+
+	border: $borderWidth solid $borderColor;
+	box-shadow: $shadowOffset $shadowOffset 0 $shadowSpread $shadowColor;
+}
