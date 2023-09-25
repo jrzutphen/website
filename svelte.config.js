@@ -28,14 +28,6 @@ const remarkMermaidCustom = () => (tree) => {
 	});
 };
 
-// We wish to expend the remark-hint plugin
-// Normally, it would output something like this:
-// <p class="hint warn">[content]</p>
-// We want to change it to this:
-// <details class="hint warn">
-//   <summary>[icon] Warning</summary>
-//   <p>[content]</p>
-// </details>
 const remarkExtendedHints = () => (tree) => {
 	visit(tree, "paragraph", (node, index, parent) => {
 		if (node?.data?.class?.split(" ").includes("hint")) {
