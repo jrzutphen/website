@@ -111,19 +111,27 @@ pre[class*="language-"] {
 
 a {
 	color: variable.$color-primary;
+
+	&.disabled {
+		pointer-events: none;
+		opacity: 0.5;
+	}
 }
 
 body {
 	background-color: variable.$color-light;
+	color: variable.$color-dark;
 
 	main {
 		$main-margin: 2rem;
 		width: calc(100dvw - #{$main-margin} * 2);
 		margin: 0 $main-margin;
+		margin-bottom: 3rem;
 
 		@include breakpoint.from(md) {
 			max-width: min(50rem, 80dvw);
 			margin: 0 auto;
+			margin-bottom: 5rem;
 		}
 
 		h1 {

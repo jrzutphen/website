@@ -14,11 +14,11 @@
 	import { derived } from "svelte/store";
 	import { page } from "$app/stores";
 
-	let home: HTMLLIElement;
-	let who: HTMLLIElement;
-	let what: HTMLLIElement;
-	let docs: HTMLLIElement;
-	let info: HTMLLIElement;
+	let home: HTMLAnchorElement;
+	let who: HTMLAnchorElement;
+	let what: HTMLAnchorElement;
+	let docs: HTMLAnchorElement;
+	let info: HTMLAnchorElement;
 
 	let active = derived(page, ($page) => {
 		const path = $page.url.pathname;
@@ -51,8 +51,8 @@
 <footer>
 	<nav aria-label="Hoofdnavigatie">
 		<ul>
-			<li id="home" bind:this={home}>
-				<a href="/">
+			<li id="home">
+				<a href="/" bind:this={home}>
 					<figure>
 						{#if $active === "home"}
 							<IconHomeActive />
@@ -63,8 +63,8 @@
 					</figure>
 				</a>
 			</li>
-			<li id="who" bind:this={who}>
-				<a href="/wie">
+			<li id="who">
+				<a href="/wie" class="disabled" bind:this={who}>
 					<figure>
 						{#if $active === "who"}
 							<IconWhoActive />
@@ -75,8 +75,8 @@
 					</figure>
 				</a>
 			</li>
-			<li id="what" bind:this={what}>
-				<a href="/wat">
+			<li id="what">
+				<a href="/wat" class="disabled" bind:this={what}>
 					<figure>
 						{#if $active === "what"}
 							<IconWhatActive />
@@ -87,8 +87,8 @@
 					</figure>
 				</a>
 			</li>
-			<li id="docs" bind:this={docs}>
-				<a href="/docs">
+			<li id="docs">
+				<a href="/docs" class="disabled" bind:this={docs}>
 					<figure>
 						{#if $active === "docs"}
 							<IconDocsActive />
@@ -99,8 +99,8 @@
 					</figure>
 				</a>
 			</li>
-			<li id="info" bind:this={info}>
-				<a href="/info">
+			<li id="info">
+				<a href="/info" class="disabled" bind:this={info}>
 					<figure>
 						{#if $active === "info"}
 							<IconInfoActive />
@@ -181,10 +181,8 @@
 								@include font-weight.value(bold, false);
 							}
 						}
-					}
 
-					&.active {
-						a {
+						&.active {
 							figure {
 								background: variable.$color-light;
 								margin: 0;
@@ -192,10 +190,8 @@
 								width: calc($icon-size + 2rem);
 							}
 						}
-					}
 
-					&:hover {
-						a {
+						&:hover {
 							figure {
 								background: variable.$color-accent;
 								margin: 0;

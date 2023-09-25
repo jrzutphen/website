@@ -26,12 +26,12 @@
 
 {#if variant === Variant.Who}
 	<li id="wie">
-		<a href="/wie">Wie</a>
+		<a href="/wie" class="disabled">Wie</a>
 		<nav aria-label="Subnavigatie: Wie">
 			<div />
 			<ul>
 				<li>
-					<a href="/wie/bestuur">
+					<a href="/wie/bestuur" class="disabled">
 						<figure>
 							<IconBoard />
 						</figure>
@@ -42,7 +42,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="/wie/leden">
+					<a href="/wie/leden" class="disabled">
 						<figure>
 							<IconMembers />
 						</figure>
@@ -53,7 +53,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="/wie/lid-worden">
+					<a href="/wie/lid-worden" class="disabled">
 						<figure>
 							<IconBecomeMember />
 						</figure>
@@ -68,12 +68,12 @@
 	</li>
 {:else if variant === Variant.What}
 	<li id="wat">
-		<a href="/wat">Wat</a>
+		<a href="/wat" class="disabled">Wat</a>
 		<nav aria-label="Subnavigatie: Wat">
 			<div />
 			<ul>
 				<li>
-					<a href="/wat/themas">
+					<a href="/wat/themas" class="disabled">
 						<figure>
 							<IconThemes />
 						</figure>
@@ -84,7 +84,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="/wat/nieuws">
+					<a href="/wat/nieuws" class="disabled">
 						<figure>
 							<IconNews />
 						</figure>
@@ -95,7 +95,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="/wat/tijdlijn">
+					<a href="/wat/tijdlijn" class="disabled">
 						<figure>
 							<IconTimeline />
 						</figure>
@@ -110,12 +110,12 @@
 	</li>
 {:else if variant === Variant.Docs}
 	<li id="docs">
-		<a href="/docs">Docs</a>
+		<a href="/docs" class="disabled">Docs</a>
 		<nav aria-label="Subnavigatie: Docs">
 			<div />
 			<ul>
 				<li>
-					<a href="/docs/adviezen">
+					<a href="/docs/adviezen" class="disabled">
 						<figure>
 							<IconAdvices />
 						</figure>
@@ -126,7 +126,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="/docs/regels">
+					<a href="/docs/regels" class="disabled">
 						<figure>
 							<IconRules />
 						</figure>
@@ -137,7 +137,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="/docs/legaal">
+					<a href="/docs/legaal" class="disabled">
 						<figure>
 							<IconLegal />
 						</figure>
@@ -152,12 +152,12 @@
 	</li>
 {:else if variant === Variant.Info}
 	<li id="info">
-		<a href="/info">Info</a>
+		<a href="/info" class="disabled">Info</a>
 		<nav aria-label="Subnavigatie: Info">
 			<div />
 			<ul>
 				<li>
-					<a href="/info/faq">
+					<a href="/info/faq" class="disabled">
 						<figure>
 							<IconFAQ />
 						</figure>
@@ -168,7 +168,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="/info/huisstijl">
+					<a href="/info/huisstijl" class="disabled">
 						<figure>
 							<IconCorporateIdentity />
 						</figure>
@@ -179,7 +179,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="/info/contact">
+					<a href="/info/contact" class="disabled">
 						<figure>
 							<IconContact />
 						</figure>
@@ -233,7 +233,6 @@
 			}
 		}
 
-		// TODO :hover
 		&:hover {
 			$padding: 1rem;
 			$offset: 0.5rem;
@@ -302,28 +301,6 @@
 						padding: 0.5rem;
 						width: fit-content;
 
-						&:hover {
-							a {
-								margin-left: 0;
-								margin-right: 2rem;
-								figure {
-									background: variable.$color-accent;
-									// TODO: decide if we also change border
-									// border-color: variable.$color-accent;
-									margin: 0.125rem;
-									border-width: 0;
-									width: calc(1.5rem + 1rem);
-									height: calc(1.5rem + 1rem);
-									box-shadow: 0 0 0 0.25rem
-										variable.$color-dark-accent;
-								}
-
-								div {
-									color: variable.$color-dark-accent;
-								}
-							}
-						}
-
 						a {
 							margin: 0 1rem;
 							display: flex;
@@ -371,6 +348,27 @@
 								p {
 									font-weight: variable.$font-weight-regular;
 									white-space: nowrap;
+								}
+							}
+
+							&:hover {
+								margin-left: 0;
+								margin-right: 2rem;
+
+								figure {
+									background: variable.$color-accent;
+									// TODO: decide if we also change border
+									// border-color: variable.$color-accent;
+									margin: 0.125rem;
+									border-width: 0;
+									width: calc(1.5rem + 1rem);
+									height: calc(1.5rem + 1rem);
+									box-shadow: 0 0 0 0.25rem
+										variable.$color-dark-accent;
+								}
+
+								div {
+									color: variable.$color-dark-accent;
 								}
 							}
 						}

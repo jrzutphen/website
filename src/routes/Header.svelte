@@ -23,7 +23,7 @@
 	<div>
 		<!-- <DarkModeToggle /> -->
 		<!-- <SearchBox /> -->
-		<a href="/info/contact" class="button">Contact</a>
+		<a href="/info/contact" class="button disabled">Contact</a>
 	</div>
 </header>
 
