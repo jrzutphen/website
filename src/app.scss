@@ -85,11 +85,11 @@ body {
 }
 
 p {
-	font-feature-settings: "onum";
+	font-feature-settings: "onum" 1;
 }
 
 abbr {
-	font-feature-settings: "c2sc";
+	font-feature-settings: "c2sc" 1;
 }
 
 pre,

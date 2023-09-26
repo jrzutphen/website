@@ -7,6 +7,17 @@
 	import Location from "~icons/heroicons/map-pin-20-solid";
 	import Email from "~icons/heroicons/envelope-20-solid";
 	import Phone from "~icons/heroicons/phone-20-solid";
+
+	function copyrightRange(): string {
+		const startYear = 2020;
+		const currentYear = new Date().getFullYear();
+
+		if (startYear === currentYear) {
+			return `${startYear}`;
+		}
+
+		return `${startYear}–${currentYear}`;
+	}
 </script>
 
 <footer>
@@ -82,7 +93,7 @@
 	<section id="bottom">
 		<section id="copyright">
 			<a href="/licentie">
-				<span>© 2021 Jongerenraad Zutphen</span>
+				<span>© {copyrightRange()} Jongerenraad Zutphen</span>
 				<span>— geen rechten voorbehouden</span>
 			</a>
 		</section>
@@ -253,6 +264,7 @@
 										gap: 0rem;
 
 										line-height: 2rem;
+										font-feature-settings: "onum" 0;
 
 										span {
 											&:first-of-type {
