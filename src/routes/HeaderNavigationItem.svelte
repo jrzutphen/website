@@ -168,7 +168,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="/info/huisstijl" class="disabled">
+					<a href="/info/huisstijl">
 						<figure>
 							<IconCorporateIdentity />
 						</figure>
