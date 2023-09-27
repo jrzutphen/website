@@ -1,9 +1,9 @@
 <script lang="ts">
 	import Logo from "$lib/asset/Logo.svg";
-	import Instagram from "~icons/mdi/instagram";
-	import LinkedIn from "~icons/mdi/linkedin";
-	import Facebook from "~icons/mdi/facebook";
-	import WhatsApp from "~icons/mdi/whatsapp";
+	import Instagram from "~icons/simple-icons/instagram";
+	import LinkedIn from "~icons/simple-icons/linkedin";
+	import Facebook from "~icons/simple-icons/facebook";
+	import WhatsApp from "~icons/simple-icons/whatsapp";
 	import Location from "~icons/heroicons/map-pin-20-solid";
 	import Email from "~icons/heroicons/envelope-20-solid";
 	import Phone from "~icons/heroicons/phone-20-solid";
