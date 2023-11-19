@@ -1,0 +1,70 @@
+# Simple workflow for deploying static content to GitHub Pages
+name: Deploy static content to Pages
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches:
+      - production
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets the GITHUB_TOKEN permissions to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+  # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+  # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "production"
+  cancel-in-progress: false
+
+jobs:
+  # Single deploy job since we're just deploying
+  deploy:
+    environment:
+      name: production
+      url: ${{ vars.URL }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Set up PNPM
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+      - name: Set up Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          cache: "pnpm"
+      - name: Install dependencies
+        run: pnpm install
+      - name: Synchronise SvelteKit type definitions
+        run: pnpm exec svelte-kit sync --mode production
+      - name: Build
+        run: pnpm build
+      - name: Upload artifact
+        uses: SamKirkland/FTP-Deploy-Action@v4
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          port: ${{ vars.FTP_PORT }}
+          protocol: ${{ vars.FTP_PROTOCOL }}
+          local-dir: build/
+          server-dir: ${{ vars.FTP_SERVER_DIR }}
+      - name: Configure sitemap cache
+        id: sitemap-cache
+        uses: actions/cache@v3
+        with:
+          path: build/sitemap.xml
+          key: sitemap-cache-${{ hashFiles('build/sitemap.xml') }}
+          lookup-only: true
+      - name: Notify Google of updated sitemap
+        if: steps.sitemap-cache.outputs.cache-hit != 'true'
+        run: |
+          curl -s "https://google.com/ping?sitemap={{ vars.URL }}/sitemap.xml"

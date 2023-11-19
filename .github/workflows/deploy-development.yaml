@@ -4,7 +4,8 @@ name: Deploy static content to Pages
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["main"]
+    branches:
+      - development
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -18,14 +19,14 @@ permissions:
   # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
   # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
-  group: "pages"
+  group: "development"
   cancel-in-progress: false
 
 jobs:
   # Single deploy job since we're just deploying
   deploy:
     environment:
-      name: github-pages
+      name: development
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
@@ -45,15 +46,14 @@ jobs:
       - name: Synchronise SvelteKit type definitions
         run: pnpm exec svelte-kit sync --mode production
       - name: Build
-        run: |
-          pnpm build
-          touch build/.nojekyll
+        run: pnpm build
+      - name: Mark build as not a Jekyll site
+        run: touch build/.nojekyll
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          # Upload build repository
           path: "build/"
       - name: Deploy to GitHub Pages
         id: deployment
@@ -68,4 +68,4 @@ jobs:
       - name: Notify Google of updated sitemap
         if: steps.sitemap-cache.outputs.cache-hit != 'true'
         run: |
-          curl -s "https://google.com/ping?sitemap=https://nieuw.jrzutphen.nl/sitemap.xml"
+          curl -s "https://google.com/ping?sitemap={{ steps.deployment.outputs.page_url }}/sitemap.xml"
