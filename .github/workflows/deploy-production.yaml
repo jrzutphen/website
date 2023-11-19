@@ -67,4 +67,4 @@ jobs:
       - name: Notify Google of updated sitemap
         if: steps.sitemap-cache.outputs.cache-hit != 'true'
         run: |
-          curl -s "https://google.com/ping?sitemap={{ vars.URL }}/sitemap.xml"
+          curl -s "https://google.com/ping?sitemap=${{ vars.URL }}/sitemap.xml"
