@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Hero from "./HeroRight.svelte";
+	import VER_sterk from "./VER_sterk.svelte";
 </script>
 
 <div id="announcement">
@@ -12,6 +13,8 @@
 </div>
 
 <Hero />
+
+<VER_sterk />
 
 <style lang="scss">
 	@use "$lib/style/variable";
