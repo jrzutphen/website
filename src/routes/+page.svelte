@@ -20,7 +20,7 @@
 	@use "$lib/style/mixin";
 
 	#announcement {
-		width: 100%;
+		width: calc(100% - 0.5rem);
 
 		@include mixin.border-and-shadow(
 			0.25rem,
@@ -30,6 +30,7 @@
 		);
 
 		margin-bottom: 1rem;
+		margin-right: 0.5rem;
 		padding: 1rem;
 
 		background: variable.$color-secondary;
