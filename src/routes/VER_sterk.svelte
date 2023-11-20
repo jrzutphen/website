@@ -91,8 +91,7 @@
 				figcaption {
 					position: absolute;
 					bottom: 1rem;
-					right: 50%;
-					transform: translateX(50%);
+					right: 1.5rem;
 					padding: 0.25rem 0.5rem;
 					opacity: 0.75;
 					background: variable.$color-light;
@@ -102,16 +101,6 @@
 					white-space: nowrap;
 
 					@include mixin.border-and-shadow(0, 0.25rem);
-
-					@include breakpoint.between(sm, md) {
-						right: 1.5rem;
-						transform: none;
-					}
-
-					@include breakpoint.from(lg) {
-						right: 1.5rem;
-						transform: none;
-					}
 
 					a {
 						color: variable.$color-dark;
