@@ -71,8 +71,8 @@ devDependencies:
     specifier: ^8.0.3
     version: 8.0.3
   katex:
-    specifier: ^0.16.8
-    version: 0.16.8
+    specifier: ^0.16.10
+    version: 0.16.10
   lint-staged:
     specifier: ^14.0.1
     version: 14.0.1
@@ -3134,8 +3134,8 @@ packages:
     engines: {'0': node >= 0.2.0}
     dev: true
 
-  /katex@0.16.8:
-    resolution: {integrity: sha512-ftuDnJbcbOckGY11OO+zg3OofESlbR5DRl2cmN8HeWeeFIV7wTXvAOx8kEjZjobhA+9wh2fbKeO6cdcA9Mnovg==}
+  /katex@0.16.10:
+    resolution: {integrity: sha512-ZiqaC04tp2O5utMsl2TEZTXxa6WSC4yo0fv5ML++D3QZv/vx2Mct0mTlRx3O+uUkjfuAgOkzsCmq5MiUEsDDdA==}
     hasBin: true
     dependencies:
       commander: 8.3.0
@@ -4823,7 +4823,7 @@ packages:
       hast-util-from-string: 2.0.0
       hast-util-select: 5.0.5
       hast-util-to-string: 2.0.0
-      katex: 0.16.8
+      katex: 0.16.10
     dev: true
 
   /remark-behead@3.1.0:
