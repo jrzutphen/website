@@ -1,13 +1,14 @@
 <section id="Zomervakantie">
 	<section>
-		<h1>Wij zijn met zomervakantie!</h1>
+		<h2>Wij zijn met zomervakantie!</h2>
 		<p>
-			Daarom nemen wij de telefoon (waarschijnlijk) niet op! Voor vragen kun je
+			Daarom nemen wij de telefoon (waarschijnlijk) niet op! Voor vragen
+			kun je
 			<a href="mailto:hallo@jrzutphen.nl">mailen</a>.
 		</p>
 		<p>
-			Heb je een dringende vraag? Neem dan contact op met een van de volgende
-			personen:
+			Heb je een dringende vraag? Neem dan contact op met een van de
+			volgende personen:
 		</p>
 		<div id="buttons">
 			<a href="tel:31-6-24462096">Luka</a>
