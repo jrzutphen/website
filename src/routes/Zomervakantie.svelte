@@ -1,40 +1,17 @@
-<script lang="ts">
-	import CoverSrcsetWebp from "$lib/asset/VER_sterkBanner.jpg?w=512;1024;2048;4096;5200&format=webp&as=srcset";
-	import CoverSrcsetJpeg from "$lib/asset/VER_sterkBanner.jpg?w=512;1024;2048;4096;5200&format=jpeg&as=srcset";
-	import CoverFallback from "$lib/asset/VER_sterkBanner.jpg?w=512";
-
-	let buttonText = encodeURIComponent(
-		"Hey, ik heb een vraag over de Jongerenraad Zutphen"
-	);
-</script>
-
-<section id="VER_sterk">
-	<figure>
-		<picture>
-			<source type="image/webp" srcset={CoverSrcsetWebp} />
-			<source type="image/jpeg" srcset={CoverSrcsetJpeg} />
-			<img
-				src={CoverFallback}
-				alt="De IJsselkade op een zonnige dag, met de Oude IJsselbrug op de achtergrond"
-			/>
-		</picture>
-		<figcaption>
-			&copy; <a href="https://njr.nl/nl/verhalen/ver_sterk">NJR</a>
-		</figcaption>
-	</figure>
-
+<section id="Zomervakantie">
 	<section>
+		<h1>Wij zijn met zomervakantie!</h1>
 		<p>
-			Hier tijdens of na VER_sterk? Vragen over onze poster, wat wij doen,
-			of waarom onze structuur dé structuur is voor duurzame, bottoms-up
-			jeugdparticipatie? Zoek Luka of Milan op, ze lopen ergens rond ^^
+			Daarom nemen wij de telefoon (waarschijnlijk) niet op! Voor vragen kun je
+			<a href="mailto:hallo@jrzutphen.nl">mailen</a>.
 		</p>
 		<p>
-			Kan je ze niet vinden of ben je al weg? Stuur dan gerust een appje:
+			Heb je een dringende vraag? Neem dan contact op met een van de volgende
+			personen:
 		</p>
 		<div id="buttons">
-			<a href="https://wa.me/31624462096?text={buttonText}">Luka</a>
-			<a href="https://wa.me/31615358556?text={buttonText}">Milan</a>
+			<a href="tel:31-6-24462096">Luka</a>
+			<a href="tel:31-6-15358556">Milan</a>
 		</div>
 	</section>
 </section>
@@ -58,7 +35,7 @@
 		// max-width: $main-width !important;
 		// position: relative;
 
-		#VER_sterk {
+		#Zomervakantie {
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
