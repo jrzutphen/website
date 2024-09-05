@@ -68,7 +68,7 @@ _paginate: skip
   - er worden illegale vuurwerkbommen afgestoken bij woningen,
   - scholieren worden (zwaar) mishandeld op school,
   - er vinden om de haverklap steekpartijen plaats – tijdens festivals, bij het uitgaan, of gewoon op straat – sommige zelfs met dodelijke afloop,
-  - jongeren plegen zelfmoord door van bruggen af te springen,
+  - er wordt voor steeds vaker – ook publiekelijk – zelfmoord gepleegd,
   - er zijn kinderlokkers actief in onze woonwijken,
   - en nog geen week geleden wordt op klaarlichte dag een juwelier overvallen.
 
@@ -78,8 +78,9 @@ _paginate: skip
 - Omwonenden weten soms wel wie het gedaan heeft,
   maar durven niets te zeggen uit angst voor represailles.
 - Ouders willen niet dat hun kinderen 's avonds buiten zijn.
-- Jongeren, voornamelijk vrouwen, voelen zich niet meer veilig op straat.
-- Dit is een zorgwekkende ontwikkeling die we niet langer kunnen negeren.
+- Jongeren voelen zich niet meer veilig op straat.
+
+Dit is een zorgwekkende ontwikkeling die we niet langer kunnen negeren.
 
 ---
 
@@ -127,34 +128,19 @@ _paginate: skip
 
 # Is dit **nieuws**?
 
-Nee!
+Nee! Dit weten we allemaal al lang! Waarom wordt er dan niets aan gedaan?
 
-- We weten allemaal al lang dat er heel weinig te doen is voor jongeren.
-- We weten allemaal al lang dat jongeren nergens worden toegelaten.
-- We weten allemaal al lang dat er naast Bubbels en Schatjes geen uitgaansgelegenheden zijn voor jongeren.
-- We weten allemaal al lang dat daar en op de Schupstoel veel intimiderend en agressief gedrag voorkomt.
-
----
-
-Waarom wordt er dan niets aan gedaan?
-
-- De gemeente schuift het maar van zich af
-  - De taak wordt weggelegd bij vrijwilligers
-  - Er wordt gezegd dat het aan ondernemers is om uitgaansgelegenheden te creëren, en ondertussen wordt het hun zo lastig mogelijk gemaakt
-  - Er wordt gezegd dat het aan de politie en BOA's is om de orde te handhaven, maar die hebben al jaren te weinig capaciteit, en moties voor meer capaciteit worden weggestemd
+- Het is voor ondernemers niet interessant om uitgaansgelegenheden te creëren
+- Politie en boa's hebben al jaren te weinig capaciteit
+- Er wordt bezuinigd op jongerenwerk en straatcoaches
+- Lopende initiatieven worden stilgelegd om na te denken over een 'goed beleid', ondertussen heb ik in mei mijn derde sessie 'aftrap project jongerenwerk' gehad sinds ik bij de jongerenraad zit
 
 ---
 
-- De gemeente schuift het maar van zich af
-  - Er wordt gezegd dat jongerenstraatcoaches en jongerenwerkers de 'probleemjongeren' moeten helpen, maar daar wordt ondertussen hard op bezuinigd, waardoor ze amper te vinden en slecht bereikbaar zijn
-  - Lopende initiatieven worden stilgelegd om na te denken over een 'goed beleid', ondertussen heb ik in mei mijn derde sessie 'aftrap project jongerenwerk' gehad sinds ik bij de jongerenraad zit
-
----
-
-En dit alles terwijl mijn leeftijdsgenoten, mijn vrienden, mijn leden en uw kinderen
+En dit alles terwijl mijn leeftijdsgenoten, mijn vrienden, onze leden en uw kinderen
 
 - niet meer veilig over straat kunnen,
-- worden neergestoken, 
+- worden neergestoken,
 - zichzelf verliezen in een drugsverslaving,
 - denken aan zelfmoord en nog vijf maanden op de wachtlijst staan voordat er een intake plaatsvindt.
 
@@ -162,11 +148,9 @@ En dit alles terwijl mijn leeftijdsgenoten, mijn vrienden, mijn leden en uw kind
 
 # Dit is niet zomaar opgelost
 
-Ons huidige sociaal-maatschappelijke klimaat creëert deze jongeren.
+Ons huidige sociaal-maatschappelijke klimaat creëert deze problemen.
 
-Jullie beleidskeuzes in de afgelopen decennia hebben deze problemen mogelijk gemaakt.
-
-Het is nu tijd om dit te veranderen.
+Jullie kunnen dit veranderen.
 
 Om op de korte termijn onze jongeren te beschermen.
 
@@ -186,15 +170,15 @@ Zodat jongeren zich thuis kunnen voelen in Zutphen.
 
 ---
 
-# Wat nu?
+<!--
+_class: lead
+-->
 
-- Team Jeugd is nu bezig met het project jongerenwerk. **Zet dat door.** Zorg ervoor dat dat goed verloopt, en dat ik over twee jaar niet bij de vierde aftrapsessie zit.
-- **Investeer in jongeren.** In kwalitatieve straatcoaches, in jongerenwerkers, en in de jongeren zelf. **Evalueer** wat voor effect ze hebben, en wat beter kan.
-- En het allerbelangrijkste:
+# Daarom vragen we jullie om nu met oplossingen te komen
 
 ---
 
-## **Luister** naar de jongeren!
+## **Luister** hierbij naar de jongeren
 
 - Betrek ons bij de beeldvorming, de oordeelsvorming, en de besluitvorming.
-- Wij, de jongeren, weten wat er speelt, we weten wat er nodig is.
+- Wij, de jongeren, weten wat er speelt, we weten wat we nodig hebben.
