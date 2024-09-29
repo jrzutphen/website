@@ -66,17 +66,17 @@
 						</figure>
 						<p>
 							<span>Jongerenraad Zutphen</span>
-							<span>Wilhelminastraat 54-12</span>
-							<span>7511 DP Enschede</span>
+							<span>Postbus 41</span>
+							<span>7200 AA Zutphen</span>
 						</p>
 					</a>
 				</li>
 				<li>
-					<a href="mailto:info@jrzutphen.nl">
+					<a href="mailto:hallo@jrzutphen.nl">
 						<figure>
 							<Email />
 						</figure>
-						<p>info@jrzutphen.nl</p>
+						<p>hallo@jrzutphen.nl</p>
 					</a>
 				</li>
 				<li>
