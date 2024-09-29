@@ -1,7 +1,5 @@
 <script lang="ts">
 	import Hero from "./HeroRight.svelte";
-	import Zomervakantie from "./Zomervakantie.svelte";
-	import VER_sterk from "./Zomervakantie.svelte";
 </script>
 
 <div id="announcement">
@@ -14,8 +12,6 @@
 </div>
 
 <Hero />
-
-<Zomervakantie />
 
 <style lang="scss">
 	@use "$lib/style/variable";
