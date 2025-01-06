@@ -211,7 +211,7 @@ TODO 3: waiting for ParaglideJS support in Deno
 		"vite": "npm:vite@^6.0.6",
 		"@sveltejs/vite-plugin-svelte": "npm:@sveltejs/vite-plugin-svelte@^5.0.3",
 		"@sveltejs/kit": "npm:@sveltejs/kit@^2.15.1",
-		"svelte": "npm:svelte@^5.16.0",
+		"svelte": "npm:svelte@^5.16.4",
 
 		"@sveltejs/adapter-static": "npm:@sveltejs/adapter-static@^3.0.8",
 		// TODO when server-side rendering is needed
