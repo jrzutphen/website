@@ -69,17 +69,36 @@ TODO 3: waiting for ParaglideJS support in Deno
 			"description": "Check for updates of all dependencies",
 			"command": "concurrently 'deno:update:check:*' --prefix-colors auto"
 		},
-		"update:deno": {
+
+		"update:compatible:deno": {
 			"description": "Update Deno dependencies to latest compatible versions",
 			"command": "deno outdated --update"
 		},
-		"update:dprint": {
+		"update:compatible:dprint": {
 			"description": "Update dprint plugins to latest versions without prompting",
 			"command": "dprint config update --yes"
 		},
-		"update": {
+		"update:compatible": {
 			"description": "Update all dependencies to latest compatible versions",
-			"command": "concurrently 'deno:update:*(!check)' --prefix-colors auto"
+			"command": "concurrently 'deno:update:compatible:*' --prefix-colors auto"
+		},
+
+		"update:latest:deno": {
+			"description": "Update Deno dependencies to latest (possibly incompatbile) versions",
+			"command": "deno outdated --update --latest"
+		},
+		"update:latest:dprint": {
+			"description": "Update dprint plugins to latest versions without prompting",
+			"command": "dprint config update --yes"
+		},
+		"update:latest": {
+			"description": "Update all dependencies to latest (possibly incompatible) versions",
+			"command": "concurrently 'deno:update:latest:*' --prefix-colors auto"
+		},
+
+		"update": {
+			"description": "Help command that lists all update commands",
+			"command": "echo 'Run `deno task update:check` to check for updates, `deno task update:compatible` to update to latest compatible versions, or `deno task update:latest` to update to latest versions'"
 		},
 
 		"compile:svelte-config": {
