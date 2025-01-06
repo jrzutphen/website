@@ -1,0 +1,212 @@
+/*
+TODO 1: waiting for Playwright support in Deno
+	See: https://github.com/denoland/deno/issues/16899
+	See also: https://github.com/denoland/deno/issues/23524
+TODO 2: waiting for Storybook support in Deno
+	See: https://github.com/denoland/deno/issues/20610
+TODO 3: waiting for ParaglideJS support in Deno
+	Could possibly be fixed with the Paraglide JS 2.0 release
+	See: https://github.com/opral/inlang-paraglide-js/issues/201
+*/
+
+{
+	"unstable": [
+		"fmt-component",
+		"fmt-sql"
+	],
+
+	"compilerOptions": {
+		"checkJs": true,
+		"strict": true,
+
+		"verbatimModuleSyntax": true,
+		"lib": [
+			"dom",
+			"dom.iterable",
+			"dom.asynciterable",
+			"deno.ns",
+			"deno.unstable"
+		],
+
+		"noUncheckedIndexedAccess": true
+	},
+
+	"fmt": {
+		"useTabs": true,
+		"indentWidth": 4
+	},
+
+	"nodeModulesDir": "auto",
+
+	"test": {
+		"include": [
+			"src/",
+			"src/test/"
+		]
+	},
+
+	"tasks": {
+		/* TODO 1
+		"install:playwright": {
+			"description": "Install Playwright browsers",
+			"command": "playwright install"
+		},
+		*/
+		"install": {
+			"description": "Perform all necessary installations (apart from `deno install`, which needs to be ran before this)",
+			"command": "concurrently 'deno:install:*' --prefix-colors auto"
+		},
+
+		"update:check:deno": {
+			"description": "Check for latest (possibly incompatible) updates of Deno dependencies",
+			"command": "deno outdated --latest"
+		},
+		"update:check:dprint": {
+			"description": "Check for updates of dprint plugins, prompting to update",
+			"command": "dprint config update"
+		},
+		"update:check": {
+			"description": "Check for updates of all dependencies",
+			"command": "concurrently 'deno:update:check:*' --prefix-colors auto"
+		},
+		"update:deno": {
+			"description": "Update Deno dependencies to latest compatible versions",
+			"command": "deno outdated --update"
+		},
+		"update:dprint": {
+			"description": "Update dprint plugins to latest versions without prompting",
+			"command": "dprint config update --yes"
+		},
+		"update": {
+			"description": "Update all dependencies to latest compatible versions",
+			"command": "concurrently 'deno:update:*(!check)' --prefix-colors auto"
+		},
+
+		"compile:svelte-config": {
+			"description": "Compile svelte.config.ts to svelte.config.js",
+			"command": "esbuild svelte.config.ts --outfile=svelte.config.js"
+		},
+		"compile": {
+			"description": "Compile the project",
+			"command": "concurrently 'deno:compile:*' --prefix-colors auto"
+		},
+
+		"check:svelte": {
+			"description": "Check Svelte files",
+			"command": "svelte-kit sync && svelte-check"
+		},
+		"check": {
+			"description": "Run all checks",
+			"command": "concurrently 'deno:check:*' --prefix-colors auto"
+		},
+
+		"test:unit": {
+			"description": "Run unit tests",
+			"command": "deno test src/test/unit/"
+		},
+		"test:e2e": {
+			"description": "Run end-to-end tests",
+			/* TODO 1
+			"command": "playwright test"
+			*/
+			// TODO more granular --allow-run permissions?
+			"command": "deno test --allow-env --allow-net --allow-read --allow-run --allow-write src/test/e2e/"
+		},
+		"test": {
+			"description": "Run all tests",
+			"command": "concurrently 'deno:test:*' --prefix-colors auto"
+		},
+
+		"build:site": {
+			"description": "Build the site",
+			"command": "vite build",
+			"dependencies": ["compile"]
+		},
+		/* TODO 2
+		"build:storybook": {
+			"description": "Build the storybook",
+			"command": "storybook build",
+			"dependencies": ["compile"]
+		},
+		*/
+		"build": {
+			"description": "Build the project",
+			"command": "concurrently 'deno:build:*' --prefix-colors auto"
+		},
+
+		"dev:site": {
+			"description": "Start a development server for the site",
+			"command": "vite",
+			"dependencies": ["compile"]
+		},
+		/* TODO 2
+		"dev:storybook": {
+			"description": "Start a development server for the storybook",
+			"command": "storybook dev",
+			"dependencies": ["compile"]
+		},
+		*/
+		"dev": {
+			"description": "Start a development server",
+			"command": "concurrently 'deno:dev:*' --prefix-colors auto"
+		},
+
+		"preview": {
+			"description": "Start a preview production server",
+			"command": "vite preview",
+			"dependencies": ["build"]
+		}
+	},
+
+	"imports": {
+		"$lib": "./src/lib",
+		"$lib/": "./src/lib/",
+		"$env/static/public": "./.svelte-kit/ambient.d.ts",
+		"$env/static/private": "./.svelte-kit/ambient.d.ts",
+		"$env/dynamic/public": "./.svelte-kit/ambient.d.ts",
+		"$env/dynamic/private": "./.svelte-kit/ambient.d.ts",
+		"$app/forms": "../node_modules/@sveltejs/kit/types/index.d.ts",
+		"$app/environment": "../node_modules/@sveltejs/kit/types/index.d.ts",
+		"$app/navigation": "../node_modules/@sveltejs/kit/types/index.d.ts",
+		"$app/server": "../node_modules/@sveltejs/kit/types/index.d.ts",
+		"$app/stores": "../node_modules/@sveltejs/kit/types/index.d.ts",
+
+		/* TODO 1
+		"@playwright/test": "npm:@playwright/test@^1.49.1",
+		*/
+
+		/* TODO 2
+		"storybook": "npm:storybook@^8.4.7",
+		"@storybook/builder-vite": "npm:@storybook/builder-vite@^8.4.7",
+		"@storybook/addon-designs": "npm:@storybook/addon-designs@^8.0.4",
+		"@storybook/addon-essentials": "npm:@storybook/addon-essentials@^8.4.7",
+		"@storybook/addon-interactions": "npm:@storybook/addon-interactions@^8.4.7",
+		"@storybook/addon-svelte-csf": "npm:@storybook/addon-svelte-csf@^4.2.0",
+		"@storybook/blocks": "npm:@storybook/blocks@^8.4.7",
+		"@storybook/svelte": "npm:@storybook/svelte@^8.4.7",
+		"@storybook/sveltekit": "npm:@storybook/sveltekit@^8.4.7",
+		"@storybook/test": "npm:@storybook/test@^8.4.7",
+		"@chromatic-com/storybook": "npm:@chromatic-com/storybook@^3.2.3",
+		*/
+
+		"vite": "npm:vite@^6.0.6",
+		"@sveltejs/vite-plugin-svelte": "npm:@sveltejs/vite-plugin-svelte@^5.0.3",
+		"@sveltejs/kit": "npm:@sveltejs/kit@^2.15.1",
+		"svelte": "npm:svelte@^5.16.0",
+
+		"@sveltejs/adapter-static": "npm:@sveltejs/adapter-static@^3.0.8",
+		"svelte-adapter-deno": "npm:svelte-adapter-deno@^0.9.1",
+
+		"mdsvex": "npm:mdsvex@^0.12.3",
+
+		/* TODO 3
+		"@inlang/paraglide-sveltekit": "npm:@inlang/paraglide-sveltekit@^0.15.4",
+		*/
+
+		// Development dependencies
+		"concurrently": "npm:concurrently@^9.1.1",
+		"dprint": "npm:dprint@^0.48.0",
+		"esbuild": "npm:esbuild@^0.24.2",
+		"svelte-check": "npm:svelte-check@^4.1.1"
+	}
+}

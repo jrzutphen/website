@@ -1,0 +1,32 @@
+name: Check
+
+on:
+  push:
+  # TODO 3 (see deno.jsonc)
+  # pull_request_target:
+
+jobs:
+  # TODO 3 (see deno.jsonc)
+  # ninja:
+  #   name: Ninja i18n
+  #   runs-on: ubuntu-latest
+
+  #   permissions:
+  #     pull-requests: write
+  #     issues: read
+  #     contents: read
+
+  #   steps:
+  #   - name: Run Ninja
+  #     uses: opral/ninja-i18n-action@main
+
+  check-style:
+    name: Check style
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Check style using dprint
+        uses: dprint/check@v2.2

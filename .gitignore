@@ -1,0 +1,29 @@
+# Based on https://github.com/github/gitignore
+
+# Generic
+## Cache
+.cache/
+
+# Deno
+node_modules/
+
+# Storybook
+## Build artefacts
+storybook-static/
+
+## Cache
+.cache/storybook/
+
+# SvelteKit
+## Build artefacts
+build/
+
+## Cache
+.svelte-kit/
+
+## Generated
+svelte.config.js
+
+# Vite
+## Cache
+.vite/
