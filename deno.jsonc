@@ -195,7 +195,8 @@ TODO 3: waiting for ParaglideJS support in Deno
 		"svelte": "npm:svelte@^5.16.0",
 
 		"@sveltejs/adapter-static": "npm:@sveltejs/adapter-static@^3.0.8",
-		"svelte-adapter-deno": "npm:svelte-adapter-deno@^0.9.1",
+		// TODO when server-side rendering is needed
+		// "svelte-adapter-deno": "npm:svelte-adapter-deno@^0.9.1",
 
 		"mdsvex": "npm:mdsvex@^0.12.3",
 
