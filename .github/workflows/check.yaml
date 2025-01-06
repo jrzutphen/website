@@ -19,7 +19,6 @@ jobs:
   #   steps:
   #   - name: Run Ninja
   #     uses: opral/ninja-i18n-action@main
-
   check-style:
     name: Check style
     runs-on: ubuntu-latest

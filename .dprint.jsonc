@@ -22,7 +22,6 @@
 	"markup": {
 	},
 	"yaml": {
-		"useTabs": false,
 		"indentWidth": 2,
 		"formatComments": true,
 		"bracketSpacing": true
