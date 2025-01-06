@@ -1,0 +1,12 @@
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: ".github/workflows/"
+    schedule:
+      interval: "daily"
+    commit-message:
+      prefix: "build"
+    assignees:
+      - "dependabot[bot]"
+    reviewers:
+      - "@jrzutphen/tech"
