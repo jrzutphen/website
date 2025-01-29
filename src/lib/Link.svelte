@@ -6,7 +6,7 @@ interface Properties {
 </script>
 
 <script lang="ts">
-const { text, href }: Properties = $props();
+const { text, href, ...additionalProperties }: Properties = $props();
 </script>
 
-<a href={href}>{text}</a>
+<a href={href} {...additionalProperties}>{text}</a>

@@ -1,5 +1,7 @@
-/* TODO 2 (see deno.jsonc)
-import { StorybookConfig } from "@storybook/sveltekit";
+import type { StorybookConfig } from "@storybook/sveltekit";
+
+import remarkGfm from "remark-gfm";
+import remarkGitHub from "remark-github";
 
 export default {
 	core: {
@@ -7,19 +9,35 @@ export default {
 		builder: "@storybook/builder-vite",
 	},
 
-	stories: [
-		"../src/** / *.mdx",
-		"../src/** / *.stories.@(js|ts|svelte)",
-	],
-
 	framework: "@storybook/sveltekit",
 
 	addons: [
 		"@storybook/addon-svelte-csf",
 		"@storybook/addon-essentials",
+		"@storybook/addon-a11y",
 		"@storybook/addon-designs",
+		{
+			name: "@storybook/addon-docs",
+			options: {
+				mdxPluginOptions: {
+					mdxCompileOptions: {
+						remarkPlugins: [
+							remarkGfm,
+							[remarkGitHub, { repository: "jrzutphen/website" }],
+						],
+					},
+				},
+			},
+		},
 		"@storybook/addon-interactions",
-		"@chromatic-com/storybook",
+	],
+
+	stories: [
+		"../src/**/*.mdx",
+		"../src/**/*.stories.@(js|ts|svelte)",
+	],
+
+	staticDirs: [
+		"../static/",
 	],
 } satisfies StorybookConfig;
-*/

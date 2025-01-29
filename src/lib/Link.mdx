@@ -1,0 +1,23 @@
+import { Meta, Title, Primary, Controls, Canvas, Stories } from "@storybook/blocks";
+
+import * as LinkStories from "./Link.stories.svelte";
+
+<Meta of={LinkStories} />
+
+<Title />
+
+A basic link.
+
+<Primary />
+
+## Definition
+
+It has text and a URL, to which it will navigate when clicked.
+
+Links are often used to link to other pages, or to external resources.
+
+## Usage
+
+<Controls exclude={["onclick"]} />
+
+<Canvas />

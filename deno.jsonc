@@ -2,8 +2,6 @@
 TODO 1: waiting for Playwright support in Deno
 	See: https://github.com/denoland/deno/issues/16899
 	See also: https://github.com/denoland/deno/issues/23524
-TODO 2: waiting for Storybook support in Deno
-	See: https://github.com/denoland/deno/issues/20610
 TODO 3: waiting for ParaglideJS support in Deno
 	Could possibly be fixed with the Paraglide JS 2.0 release
 	See: https://github.com/opral/inlang-paraglide-js/issues/201
@@ -141,13 +139,11 @@ TODO 3: waiting for ParaglideJS support in Deno
 			"command": "vite build",
 			"dependencies": ["compile"]
 		},
-		/* TODO 2
 		"build:storybook": {
 			"description": "Build the storybook",
 			"command": "storybook build",
 			"dependencies": ["compile"]
 		},
-		*/
 		"build": {
 			"description": "Build the project",
 			"command": "concurrently 'deno:build:*' --prefix-colors auto"
@@ -158,13 +154,11 @@ TODO 3: waiting for ParaglideJS support in Deno
 			"command": "vite",
 			"dependencies": ["compile"]
 		},
-		/* TODO 2
 		"dev:storybook": {
 			"description": "Start a development server for the storybook",
 			"command": "storybook dev",
 			"dependencies": ["compile"]
 		},
-		*/
 		"dev": {
 			"description": "Start a development server",
 			"command": "concurrently 'deno:dev:*' --prefix-colors auto"
@@ -194,24 +188,28 @@ TODO 3: waiting for ParaglideJS support in Deno
 		"@playwright/test": "npm:@playwright/test@^1.49.1",
 		*/
 
-		/* TODO 2
-		"storybook": "npm:storybook@^8.4.7",
+		"storybook": "npm:storybook@^8.6.0-alpha.2",
 		"@storybook/builder-vite": "npm:@storybook/builder-vite@^8.4.7",
-		"@storybook/addon-designs": "npm:@storybook/addon-designs@^8.0.4",
-		"@storybook/addon-essentials": "npm:@storybook/addon-essentials@^8.4.7",
-		"@storybook/addon-interactions": "npm:@storybook/addon-interactions@^8.4.7",
-		"@storybook/addon-svelte-csf": "npm:@storybook/addon-svelte-csf@^4.2.0",
 		"@storybook/blocks": "npm:@storybook/blocks@^8.4.7",
-		"@storybook/svelte": "npm:@storybook/svelte@^8.4.7",
+		"@storybook/manager-api": "npm:@storybook/manager-api@^8.5.2",
 		"@storybook/sveltekit": "npm:@storybook/sveltekit@^8.4.7",
 		"@storybook/test": "npm:@storybook/test@^8.4.7",
-		"@chromatic-com/storybook": "npm:@chromatic-com/storybook@^3.2.3",
-		*/
+		"@storybook/theming": "npm:@storybook/theming@^8.5.2",
 
-		"vite": "npm:vite@^6.0.6",
+		"@storybook/addon-a11y": "npm:@storybook/addon-a11y@^8.5.2",
+		"@storybook/addon-designs": "npm:@storybook/addon-designs@^8.0.4",
+		"@storybook/addon-docs": "npm:@storybook/addon-docs@^8.5.2",
+		"@storybook/addon-essentials": "npm:@storybook/addon-essentials@^8.4.7",
+		"@storybook/addon-interactions": "npm:@storybook/addon-interactions@^8.4.7",
+		"@storybook/addon-svelte-csf": "npm:@storybook/addon-svelte-csf@next",
+
+		"remark-gfm": "npm:remark-gfm@^4.0.0",
+		"remark-github": "npm:remark-github@^12.0.0",
+
+		"vite": "npm:vite@^6.0.11",
 		"@sveltejs/vite-plugin-svelte": "npm:@sveltejs/vite-plugin-svelte@^5.0.3",
-		"@sveltejs/kit": "npm:@sveltejs/kit@^2.15.1",
-		"svelte": "npm:svelte@^5.16.4",
+		"@sveltejs/kit": "npm:@sveltejs/kit@^2.16.1",
+		"svelte": "npm:svelte@^5.19.4",
 
 		"@sveltejs/adapter-static": "npm:@sveltejs/adapter-static@^3.0.8",
 		// TODO when server-side rendering is needed
@@ -223,10 +221,16 @@ TODO 3: waiting for ParaglideJS support in Deno
 		"@inlang/paraglide-sveltekit": "npm:@inlang/paraglide-sveltekit@^0.15.4",
 		*/
 
+		"@fontsource-variable/fira-code": "npm:@fontsource-variable/fira-code@^5.1.1",
+		"@fontsource-variable/gantari": "npm:@fontsource-variable/gantari@^5.1.1",
+		"@fontsource-variable/lexend-deca": "npm:@fontsource-variable/lexend-deca@^5.1.1",
+		"@fontsource-variable/lexend-exa": "npm:@fontsource-variable/lexend-exa@^5.1.1",
+		"@fontsource-variable/lexend-mega": "npm:@fontsource-variable/lexend-mega@^5.1.1",
+
 		// Development dependencies
 		"concurrently": "npm:concurrently@^9.1.1",
 		"dprint": "npm:dprint@^0.48.0",
 		"esbuild": "npm:esbuild@^0.24.2",
-		"svelte-check": "npm:svelte-check@^4.1.1"
+		"svelte-check": "npm:svelte-check@^4.1.4"
 	}
 }
